@@ -16,7 +16,7 @@ $ npm run dev
 ### 🎷 SASS usage
 - Dump all your `.scss` files in `src/public/assets/styles`.
 - Run `npm run gulp` to generate minified CSS files.
-- While styling, use `npm run gulp:watch`, for live compiling.
+- While styling, use `npm run gulp:watch`, for live compilation.
 
 ### ⚒️ Linting
 **In VSCode**
@@ -35,6 +35,6 @@ $ npm run dev
 - To customize the linter, use `.eslintrc` and `.prettierrc` file. [Learn more](https://eslint.org)
 
 ## 📝 License
-**MIT [Kumar Abhirup](https://kumar.now.sh)**
+**MIT - Source code by [Kumar Abhirup](https://kumar.now.sh)**
 
 _Follow me 👋 **on Twitter**_ →   [![Twitter](https://img.shields.io/twitter/follow/kumar_abhirup.svg?style=social&label=@kumar_abhirup)](https://twitter.com/kumar_abhirup/)
