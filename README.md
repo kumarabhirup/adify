@@ -1,6 +1,5 @@
 # 🍛 nodejs-boilerplate
 [![Type](https://img.shields.io/badge/type-boilerplate-yellow.svg?style=flat-square)](https://github.com/KumarAbhirup/nodejs-boilerplate)
-[![stage](https://img.shields.io/badge/stage-Testing%20%F0%9F%94%A5-000000.svg?style=flat-square)](https://github.com/KumarAbhirup/nodejs-boilerplate)
 [![Prefers](https://img.shields.io/badge/prefers-Downloading%20ZIP%20file-blue.svg?style=flat-square)](https://github.com/KumarAbhirup/nodejs-boilerplate)
 [![Twitter](https://img.shields.io/twitter/follow/kumar_abhirup.svg?style=social&label=@kumar_abhirup)](https://twitter.com/kumar_abhirup/)
 
