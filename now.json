@@ -2,5 +2,6 @@
   "version": 2,
   "alias": [
     "adify"
-  ]
+  ],
+  "scope": "iqubex-technologies"
 }
