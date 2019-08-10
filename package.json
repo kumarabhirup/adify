@@ -6,6 +6,7 @@
     "build": "lerna run build --parallel",
     "dev": "lerna run dev --parallel",
     "start": "lerna run start --parallel",
+    "deploy:now": "now",
     "lint": "lerna run lint",
     "lint:fix": "lerna run lint:fix",
     "test": "NODE_ENV=test jest --watch",
@@ -25,6 +26,7 @@
     "jest": "^24.8.0",
     "jest-next-dynamic": "^1.0.0",
     "jest-transform-graphql": "^2.1.0",
-    "lerna": "^3.16.4"
+    "lerna": "^3.16.4",
+    "now": "^16.1.1"
   }
 }
