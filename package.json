@@ -1,9 +1,10 @@
 {
-  "name": "nodejs-boilerplate",
-  "version": "1.0.0",
+  "name": "adify-monorepo",
+  "version": "0.0.1",
   "scripts": {
     "start": "npm run gulp && NODE_ENV=production node src/server/index.js",
-    "dev": "npm run gulp && NODE_ENV=development nodemon src/server/index.js",
+    "dev": "npm run gulp && NODE_ENV=development node src/server/index.js",
+    "build": "next build",
     "gulp": "gulp",
     "gulp:watch": "gulp watch",
     "lint": "eslint .",
@@ -13,7 +14,10 @@
   "license": "MIT",
   "dependencies": {
     "express": "^4.17.1",
-    "path": "^0.12.7"
+    "next": "^9.0.3",
+    "path": "^0.12.7",
+    "react": "^16.9.0",
+    "react-dom": "^16.9.0"
   },
   "devDependencies": {
     "autoprefixer": "^9.6.0",

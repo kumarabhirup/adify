@@ -3,8 +3,7 @@
     "wesbos"
   ],
   "rules": {
-    "semi": [2, "never"],
-    "object-curly-spacing": [2, "never"]
+    "semi": [2, "never"]
   },
   "parserOptions": {
     "ecmaVersion": 2017
