@@ -1,6 +1,6 @@
-# 🍛 nextjs-boilerplate
+# 🏄 adify.tech
 
-[![Type](https://img.shields.io/badge/type-boilerplate-yellow.svg?style=flat-square)](https://github.com/KumarAbhirup/nodejs-boilerplate)
+[![Type](https://img.shields.io/badge/type-monorepo-yellow.svg?style=flat-square)](https://github.com/KumarAbhirup/nodejs-boilerplate)
 [![emoji-log](https://cdn.rawgit.com/ahmadawais/stuff/ca97874/emoji-log/flat.svg)](https://github.com/ahmadawais/Emoji-Log/)
 [![Twitter](https://img.shields.io/twitter/follow/kumar_abhirup.svg?style=social&label=@kumar_abhirup)](https://twitter.com/kumar_abhirup/)
 
@@ -11,8 +11,8 @@
 - Run
 
 ```bash
-$ git clone https://github.com/KumarAbhirup/nodejs-boilerplate <PROJECT_NAME> # to clone project
-$ cd <PROJECT_NAME> # enter in the project
+$ git clone https://github.com/iqubex-technologies/adify adify-monorepo # to clone project
+$ cd adify-monorepo # enter in the project
 $ npm i # install modules
 $ npm run dev # run development server
 ```
