@@ -2,15 +2,14 @@
   "name": "adify-monorepo",
   "version": "0.0.1",
   "scripts": {
-    "build": "lerna run build --parallel",
     "build-web": "(cd web && npm run build)",
-    "start": "lerna run start --parallel",
+    "build": "lerna run build --parallel",
     "dev": "lerna run dev --parallel",
-    "format": "lerna run format",
-    "postinstall": "lerna bootstrap",
-    "lint": "eslint .",
-    "lint:fix": "eslint . --fix",
-    "test": "NODE_ENV=test jest --watch"
+    "start": "lerna run start --parallel",
+    "lint": "lerna run lint",
+    "lint:fix": "lerna run lint:fix",
+    "test": "NODE_ENV=test jest --watch",
+    "postinstall": "lerna bootstrap"
   },
   "author": "Kumar Abhirup",
   "repository": {
@@ -19,6 +18,13 @@
   "license": "MIT",
   "dependencies": {},
   "devDependencies": {
+    "babel-jest": "^24.8.0",
+    "enzyme": "^3.10.0",
+    "enzyme-adapter-react-16": "^1.14.0",
+    "enzyme-to-json": "^3.4.0",
+    "jest": "^24.8.0",
+    "jest-next-dynamic": "^1.0.0",
+    "jest-transform-graphql": "^2.1.0",
     "lerna": "^3.16.4"
   }
 }
