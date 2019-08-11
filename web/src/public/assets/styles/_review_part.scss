@@ -1,0 +1,101 @@
+/************review_part css start***************/
+.review_part {
+  position: relative;
+  z-index: 99;
+
+  .feature_icon_2 {
+    position: absolute;
+    right: 15%;
+    top: 5%;
+    z-index: -1;
+  }
+  .review_img{
+    margin-bottom: 25px;
+  }
+  .review_part_text {
+    h2 {
+      font-size: 45px;
+      font-weight: 500;
+      line-height: 55px;
+      margin-bottom: 28px;
+      position: relative;
+
+      @media #{$small_mobile} {
+        font-size: 25px;
+        margin-bottom: 10px;
+        line-height: 35px;
+      }
+
+      @media #{$large_mobile} {
+        font-size: 25px;
+        margin-bottom: 10px;
+        line-height: 35px;
+      }
+
+      @media #{$tab_device} {
+        font-size: 25px;
+        margin-bottom: 10px;
+        line-height: 35px;
+      }
+
+      @media #{$medium_device} {
+        font-size: 28px;
+        margin-bottom: 20px;
+        line-height: 40px;
+      }
+    }
+
+    p {
+      line-height: 36px;
+      margin-bottom: 34px;
+
+      @media #{$small_mobile} {
+        margin-bottom: 10px;
+      }
+
+      @media #{$large_mobile} {
+        margin-bottom: 20px;
+      }
+
+      @media #{$tab_device} {
+        margin-bottom: 20px;
+      }
+
+      @media #{$medium_device} {}
+    }
+
+    h3 {
+      font-size: 24px;
+      font-weight: 600;
+
+      span {
+        font-size: 70%;
+        color: #888888;
+        font-weight: 400;
+      }
+    }
+  }
+
+  .owl-dots {
+    padding-top: 33px;
+
+    button.owl-dot {
+      border-radius: 50px;
+      display: inline-block;
+      background: #ccc;
+      margin: 0 15px 0 0;
+      width: 20px;
+      height: 4px;
+      background-color: rgb(211, 216, 221);
+
+      &.active {
+        background-color: $btn_bg;
+      }
+
+      &:focus {
+        outline: none;
+      }
+    }
+  }
+
+}

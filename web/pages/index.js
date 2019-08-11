@@ -28,7 +28,8 @@ const Container = styled.main`
 `
 
 export default function HomePage() {
-  console.log(process.env.GA_TRACKING_ID)
+  console.log(process.env.GA_TRACKING_ID) // env does not work. issue 👉 https://github.com/zeit/next.js/issues/7320
+
   return (
     <Container>
       <Head>
