@@ -1,6 +1,7 @@
 import Head from 'next/head'
 
 export default function HomePage() {
+  console.log(process.env.GA_TRACKING_ID)
   return (
     <main>
       <Head>
