@@ -29,5 +29,8 @@
     "jest-transform-graphql": "^2.1.0",
     "lerna": "^3.16.4",
     "now": "^16.1.1"
+  },
+  "engines": {
+    "node": ">=8.0.0 <11.0.0"
   }
 }
