@@ -13,8 +13,14 @@ class Page extends Component {
     const { children } = this.props
     return (
       <ThemeProvider theme={theme}>
-        <Meta />
-        {children}
+        {/* 
+          React.Fragments needed, 
+          or see this error 👉 `https://stackoverflow.com/questions/43300897/react-children-only-expected-to-receive-a-single-react-element-child-navigator/43301040` 
+        */}
+        <>
+          <Meta />
+          {children}
+        </>
       </ThemeProvider>
     )
   }
