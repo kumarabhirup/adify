@@ -12,7 +12,11 @@
     }
   },
   "builds": [{
-    "src": "*.js",
-    "use": "@now/node"
+    "src": "web/package.json",
+    "use": "@now/next"
+  }],
+  "routes": [{
+    "src": "/(.*)",
+    "dest": "/web/$1"
   }]
 }
