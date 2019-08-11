@@ -1,7 +1,20 @@
 {
   "version": 2,
+  "public": true,
   "alias": [
     "adify"
   ],
-  "scope": "iqubex-technologies"
+  "scope": "iqubex-technologies",
+  "build": {
+    "env": {
+
+    }
+  },
+  "builds": [{
+    "src": "package.json",
+    "use": "@now/next@canary",
+    "config": {
+      "maxLambdaSize": "10mb"
+    }
+  }]
 }
