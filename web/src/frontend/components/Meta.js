@@ -15,25 +15,6 @@ class Meta extends Component {
 
         <link rel="shortcut icon" href="/static/favicon.ico" />
 
-        <script
-          src="https://cdn.onesignal.com/sdks/OneSignalSDK.js"
-          async
-        ></script>
-
-        <script
-          // eslint-disable-next-line react/no-danger
-          dangerouslySetInnerHTML={{
-            __html: `
-          var OneSignal = window.OneSignal || [];
-          OneSignal.push(function() {
-            OneSignal.init({
-              appId: "${process.env.ONESIGNAL_ID}"
-            });
-          });
-        `,
-          }}
-        ></script>
-
         <title>{meta.meta_ogTitle}</title>
       </Head>
     )
