@@ -5,6 +5,7 @@ node_modules
 
 compiled
 dist
+out
 generated
 .next
 .build

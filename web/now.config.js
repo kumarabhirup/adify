@@ -1,8 +1,13 @@
 /* eslint-disable prettier/prettier */
 
-require('dotenv').config()
+const envFile = process.env.NODE_ENV === 'production' ? '.env.production' : '.env.development'
+
+require('dotenv').config({ path: envFile })
+
 const withSass = require('@zeit/next-sass')
 const webpack = require('webpack')
+const Dotenv = require('dotenv-webpack')
+const path = require('path')
 
 module.exports = withSass({
   webpack(config) {
@@ -12,14 +17,22 @@ module.exports = withSass({
         jQuery: 'jquery',
       })
     )
+
+    /**
+     * Also tried this to make `.env` work. But of no use.
+     */
+    // const env = Object.keys(process.env).reduce((acc, curr) => {
+    //   acc[`process.env.${curr}`] = JSON.stringify(process.env[curr])
+    //   return acc
+    // }, {})
+
+    // config.plugins.push(new webpack.DefinePlugin(env))
+
+    config.plugins.push(new Dotenv({
+      path: path.join(__dirname, envFile),
+      systemvars: true
+    }))
+
     return config
-  },
-  env: {
-    'GA_TRACKING_ID': process.env.GA_TRACKING_ID,
-    'ONESIGNAL_ID': process.env.ONESIGNAL_ID,
-    'test': {
-      presets: [['es2015', { modules: false }], 'react', 'stage-0'],
-      plugins: ['transform-es2015-modules-commonjs', 'dynamic-import-node'],
-    },
   },
 })

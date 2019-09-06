@@ -9,6 +9,7 @@
     "deploy:now": "now",
     "lint": "lerna run lint",
     "lint:fix": "lerna run lint:fix",
+    "next:export": "lerna run next:export",
     "test": "NODE_ENV=test jest --watch",
     "test:ci": "NODE_ENV=test jest",
     "postinstall": "lerna bootstrap"
