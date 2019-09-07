@@ -48,6 +48,21 @@ export const landingSection = {
   },
 }
 
+export const subscribeSection = {
+  title: (
+    <>
+      Experience the most simple way to <br />
+      manage business
+    </>
+  ),
+  excerpt: '26,500 people subscribed for the gamechanging service.',
+  placeholder: 'Enter your email',
+  button: {
+    href: '/trial',
+    linkName: 'Subscribe',
+  },
+}
+
 export const showcasingSection = [
   {
     image: 'https://cdn.worldvectorlogo.com/logos/product-hunt-1.svg',

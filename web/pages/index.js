@@ -4,6 +4,7 @@ import { meta } from '../src/frontend/api/meta'
 import Header from '../src/frontend/components/Header'
 import LandingSection from '../src/frontend/components/LandingSection'
 import ShowcasingSection from '../src/frontend/components/ShowcasingSection'
+import SubscribeSection from '../src/frontend/components/SubscribeSection'
 
 export default function HomePage() {
   console.log(process.env.GA_TRACKING_ID) // env does not work. issue 👉 https://github.com/zeit/next.js/issues/7320
@@ -16,6 +17,7 @@ export default function HomePage() {
       <>
         <Header />
         <LandingSection />
+        <SubscribeSection />
         <ShowcasingSection />
       </>
     </>

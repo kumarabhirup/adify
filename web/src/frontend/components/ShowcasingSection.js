@@ -2,10 +2,7 @@ import { showcasingSection } from '../api/meta'
 
 export default function ShowcasingSection() {
   return (
-    <section
-      className="client_logo"
-      style={{ opacity: '0.6', marginTop: '20px' }}
-    >
+    <section className="client_logo" style={{ opacity: '0.6' }}>
       <div className="container">
         <div className="row align-items-center">
           <div className="col-lg-12">
