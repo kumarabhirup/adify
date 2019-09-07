@@ -28,10 +28,17 @@ module.exports = withSass({
 
     // config.plugins.push(new webpack.DefinePlugin(env))
 
-    config.plugins.push(new Dotenv({
-      path: path.join(__dirname, envFile),
-      systemvars: true
-    }))
+    // config.plugins.push(new Dotenv({
+    //   path: path.join(__dirname, envFile),
+    //   systemvars: true
+    // }))
+
+    config.plugins.push(
+      new webpack.EnvironmentPlugin({
+        GA_TRACKING_ID: 'UA-80291721-7',
+        ONESIGNAL_ID: 'something'
+      })
+    )
 
     return config
   },
