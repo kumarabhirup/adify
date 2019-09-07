@@ -8,6 +8,10 @@ export default function SubscribeSection() {
           <div className="col-lg-8">
             <div className="subscribe_part_text text-center">
               <h2>{subscribeSection.title}</h2>
+              <p style={{ marginTop: '-10px', fontSize: '20px' }}>
+                {subscribeSection.excerpt}
+              </p>
+              <br />
               <div className="subscribe_form">
                 <form action="#">
                   <div className="form-row">

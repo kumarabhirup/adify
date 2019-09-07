@@ -1,6 +1,6 @@
 /**********************footer part css*******************/
 .footer_part {
-	@include background("../img/footer_bg.png");
+	@include background("https://i.ibb.co/THXWPMd/footer-bg.png");
 	padding: 130px 0px 25px;
 
 	@media #{$tab} {
@@ -9,9 +9,7 @@
 		background-color: #f7f7f7;
 	}
 
-	@media #{$medium_device} {
-
-	}
+	@media #{$medium_device} {}
 
 	img {
 		margin-bottom: 35px;
@@ -30,9 +28,7 @@
 			margin-bottom: 20px;
 		}
 
-		@media #{$medium_device} {
-
-		}
+		@media #{$medium_device} {}
 
 		h4 {
 			font-size: 20px;
@@ -51,9 +47,7 @@
 				margin-bottom: 15px;
 			}
 
-			@media #{$medium_device} {
-				
-			}
+			@media #{$medium_device} {}
 		}
 
 		p {
@@ -82,9 +76,7 @@
 				margin-top: 15px;
 			}
 
-			@media #{$medium_device} {
-
-			}
+			@media #{$medium_device} {}
 
 			li {
 				a {
@@ -208,13 +200,11 @@
 	}
 
 	@media #{$tab} {
-		.footer_icon{
+		.footer_icon {
 			text-align: center;
 			float: none;
 		}
 	}
 
-	@media #{$medium_device} {
-
-	}
+	@media #{$medium_device} {}
 }
