@@ -6,8 +6,8 @@ export const meta = {
   social: 'adifytech',
   website: 'https://adify.now.sh', // soon https://adify.tech
   meta_description: '',
-  meta_ogTitle: 'Adify - Leading Ad serving API for publishers',
-  tagline: <>Leading Ad serving API for publishers</>,
+  meta_ogTitle: 'Adify - Ad serving API for publishers',
+  tagline: <>Ad serving API for publishers</>,
   image: 'https://i.ibb.co/tD7NDDx/logo.png',
   lightLogo:
     'https://discordapp.com/assets/065a456aee15f669a505172edc830b79.svg',
@@ -52,10 +52,15 @@ export const subscribeSection = {
   title: (
     <>
       Experience the most simple way to <br />
-      manage business
+      manage adverts
     </>
   ),
-  excerpt: '26,500 people subscribed for the gamechanging service.',
+  excerpt: (
+    <>
+      <strong>26,500 people</strong> subscribed for the{' '}
+      <strong>gamechanging service</strong>.
+    </>
+  ),
   placeholder: 'Enter your email',
   button: {
     href: '/trial',
@@ -86,4 +91,57 @@ export const showcasingSection = [
     alt: 'Time Magazine',
     link: 'https://time.com',
   },
+]
+
+export const footer = {
+  excerpt:
+    "Gathered. Under is whose you'll to make years is mat lights thing together fish made forth thirds cattle behold won't. Fourth creeping first female.",
+  copyright: (
+    <>Copyright &copy; {new Date().getFullYear()} All rights reserved.</>
+  ),
+  links: [
+    {
+      sectionName: 'About Us',
+      menu: [
+        {
+          href: '/',
+          linkName: 'Managed Website',
+        },
+      ],
+    },
+    {
+      sectionName: 'Quick Links',
+      menu: [
+        {
+          href: '/',
+          linkName: 'Managed Website',
+        },
+      ],
+    },
+    {
+      sectionName: 'My Account',
+      menu: [
+        {
+          href: '/',
+          linkName: 'Managed Website',
+        },
+      ],
+    },
+    {
+      sectionName: 'Resources',
+      menu: [
+        {
+          href: '/',
+          linkName: 'Managed Website',
+        },
+      ],
+    },
+  ],
+}
+
+export const social = [
+  { name: 'facebook', link: 'https://facebook.com/adify' },
+  { name: 'twitter', link: 'https://twitter.com/adify' },
+  { name: 'github', link: 'https://github.com/iqubex-technologies/adify' },
+  { name: 'youtube', link: 'https://youtube.com/c/Iqubex' },
 ]
