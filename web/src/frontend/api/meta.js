@@ -9,8 +9,10 @@ export const meta = {
   meta_ogTitle: 'Adify - Leading Ad serving API for publishers',
   tagline: <>Leading Ad serving API for publishers</>,
   image: 'https://i.ibb.co/tD7NDDx/logo.png',
-  lightLogo: 'https://i.ibb.co/tD7NDDx/logo.png',
-  darkLogo: 'https://i.ibb.co/tD7NDDx/logo.png',
+  lightLogo:
+    'https://discordapp.com/assets/065a456aee15f669a505172edc830b79.svg',
+  darkLogo:
+    'https://logodownload.org/wp-content/uploads/2017/11/discord-logo.png',
   favicon: `/static/favicon.ico`,
   email: `info@iqubex.com`,
   domain: 'https://adify.now.sh',
@@ -45,3 +47,28 @@ export const landingSection = {
     linkName: 'Sign up now',
   },
 }
+
+export const showcasingSection = [
+  {
+    image: 'https://cdn.worldvectorlogo.com/logos/product-hunt-1.svg',
+    alt: 'Product Hunt',
+    link: 'https://producthunt.com',
+  },
+  {
+    image:
+      'http://rockvilleredi.org/wp-content/uploads/2017/05/Forbes-logo-1024x382.jpg',
+    alt: 'Forbes Magazine',
+    link: 'https://forbes.com',
+  },
+  {
+    image:
+      'https://www.catholiccharitiesdc.org/wp-content/uploads/2018/10/twitter-logo.png',
+    alt: 'Twitter',
+    link: 'https://twitter.com',
+  },
+  {
+    image: 'https://logonoid.com/images/time-logo.png',
+    alt: 'Time Magazine',
+    link: 'https://time.com',
+  },
+]

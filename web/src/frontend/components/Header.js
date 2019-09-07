@@ -10,12 +10,22 @@ export default function Header() {
             <nav className="navbar navbar-expand-lg navbar-light">
               <Link href="/">
                 <a className="navbar-brand main_logo">
-                  <img src={meta.lightLogo} alt="logo" />
+                  <img
+                    width="151px"
+                    height="40px"
+                    src={meta.lightLogo}
+                    alt="logo"
+                  />
                 </a>
               </Link>
               <Link href="/">
                 <a className="navbar-brand single_page_logo">
-                  <img src={meta.darkLogo} alt="logo" />
+                  <img
+                    width="151px"
+                    height="40px"
+                    src={meta.darkLogo}
+                    alt="logo"
+                  />
                 </a>
               </Link>
 
@@ -36,8 +46,8 @@ export default function Header() {
                 id="navbarSupportedContent"
               >
                 <ul className="navbar-nav">
-                  {menu.map(({ linkName, href }) => (
-                    <li className="nav-item">
+                  {menu.map(({ linkName, href }, i) => (
+                    <li className="nav-item" key={i}>
                       <Link href={href}>
                         <a className="nav-link">{linkName}</a>
                       </Link>
