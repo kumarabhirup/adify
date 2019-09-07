@@ -1,7 +1,7 @@
 /**************** banner part css start ****************/
 .banner_part {
     position: relative;
-    background-image: url(../img/banner_bg.png);
+    background-image: url(https://i.ibb.co/5vWtrs7/banner-bg.png);
     background-repeat: no-repeat;
     background-size: 65% 100%;
     background-position: left top;
@@ -9,6 +9,7 @@
     @media #{$tab} {
         background-image: none;
     }
+
     @media #{$medium_device} {
         background-image: none;
     }
@@ -98,6 +99,7 @@
         right: 10%;
         top: 0%;
         z-index: -1;
+
         @media #{$tab} {
             display: none;
         }
@@ -115,6 +117,7 @@
         right: 10%;
         top: 35%;
         z-index: -1;
+
         @media #{$tab} {
             display: none;
         }
@@ -139,6 +142,7 @@
         right: 50%;
         bottom: 5%;
         z-index: -1;
+
         @media #{$tab} {
             display: none;
             bottom: 0%;

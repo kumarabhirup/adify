@@ -9,6 +9,7 @@
 	.main-menu-item {
 		justify-content: center !important;
 	}
+
 	.main-menu-item {
 		ul {
 			li .nav-link {
@@ -24,12 +25,15 @@
 	top: 0;
 	width: 100%;
 	z-index: 999;
-	.main-menu-item{
+
+	.main-menu-item {
 		justify-content: center;
 	}
+
 	.navbar-nav {
 		margin-left: -140px;
 	}
+
 	.navbar-brand {
 		padding-top: 0rem;
 		padding-bottom: 0px;
@@ -49,29 +53,34 @@
 				text-transform: uppercase;
 				line-height: 12px;
 				font-weight: 600;
+
 				@media #{$medium_device} {
 					padding: 35px 20px;
 				}
-				&:hover{
+
+				&:hover {
 					color: $btn_bg;
 				}
 			}
 		}
 	}
-	.menu_btn{
+
+	.menu_btn {
 		border: 1px solid #dde0e3;
 		color: $primary_color;
 		font-size: 16px;
 		padding: 9px 41px;
 		border-radius: 50px;
 		background-color: $white-color;
-		&:hover{
+
+		&:hover {
 			background-color: $primary_color;
-			border: 1px solid $primary_color; 
+			border: 1px solid $primary_color;
 			color: $white-color;
 		}
 	}
-	.single_page_logo{
+
+	.single_page_logo {
 		display: none;
 	}
 }
@@ -97,12 +106,16 @@
 
 	}
 
+	.dropdown-toggle::after {
+		content: ' ';
+	}
+
 	&:hover {
 		.dropdown-menu {
 			transform: scale(1);
 		}
 	}
-	
+
 }
 
 
@@ -111,18 +124,21 @@
 	.main_menu {
 		padding: 20px 0px;
 	}
+
 	.navbar-nav {
 		margin-left: 0 !important;
 		text-align: center;
-		
+
 	}
-	
-	.main_logo{
+
+	.main_logo {
 		display: none;
 	}
-	.single_page_logo{
+
+	.single_page_logo {
 		display: block !important;
 	}
+
 	.home_menu .main-menu-item {
 		padding-left: 0px;
 	}
@@ -130,6 +146,7 @@
 	.main_menu .main-menu-item {
 		text-align: left !important;
 		box-shadow: 0 15px 16px 0 rgba($color: #000000, $alpha: .1);
+
 		.nav-item {
 			padding: 10px 15px !important;
 
@@ -187,44 +204,52 @@
 		width: 33px;
 		height: 33px;
 	}
-	.btn_1{
+
+	.btn_1 {
 		margin-top: 0;
 	}
 }
+
 @media #{$medium_device} {
 	.main_menu .navbar-nav {
 		margin-left: -50px;
 	}
-		
-	.main_logo{
+
+	.main_logo {
 		display: none;
 	}
-	.single_page_logo{
+
+	.single_page_logo {
 		display: block !important;
 	}
+
 	.main-menu-item {
 		ul {
 			li .nav-link {
 				color: #000 !important;
-				&:hover{
+
+				&:hover {
 					color: $btn_bg;
 				}
 			}
 		}
 	}
 }
+
 @media #{$medium_device} {
-	.single_page_menu{
+	.single_page_menu {
 		ul {
 			li .nav-link {
 				color: #fff !important;
-				&:hover{
+
+				&:hover {
 					color: $btn_bg;
 				}
 			}
 		}
 	}
 }
+
 @media #{$small_mobile} {
 	.navbar-brand img {
 		max-width: 100px;
@@ -240,7 +265,8 @@
 		top: -2px;
 		left: auto;
 	}
-	.main_menu{
+
+	.main_menu {
 		height: 75px;
 	}
 
@@ -260,17 +286,24 @@
 .menu_icon {
 	&:after {
 		position: absolute;
-		content: "\e68e";
+		content: "";
 		top: 7px;
 		left: 0px;
 		font-family: 'themify';
 		color: #000000;
 		font-size: 25px;
-		width: 33px;
-		height: 33px;
+		width: 20px;
+		height: 20px;
+		background: linear-gradient(to bottom,
+				black, black 20%,
+				white 20%, white 40%,
+				black 40%, black 60%,
+				white 60%, white 80%,
+				black 80%, black 100%);
 	}
 }
-.single_page_menu{
+
+.single_page_menu {
 	.menu_icon {
 		&:after {
 			position: absolute;
@@ -278,31 +311,37 @@
 			top: 7px;
 			left: 0px;
 			font-family: 'themify';
-			color: $white-color;;
+			color: $white-color;
+			;
 			font-size: 25px;
 			width: 33px;
 			height: 33px;
 		}
 	}
 }
+
 .single_page_menu {
 	.main-menu-item {
 		justify-content: center;
+
 		.navbar-nav {
 			margin-left: 0 !important;
 		}
 	}
-	.btn_1{
+
+	.btn_1 {
 		background-color: $white-color;
 		border: 1px solid $white-color;
 		color: $heading_color;
 		font-weight: 500;
-		&:hover{
+
+		&:hover {
 			background-color: $btn_bg;
 			border: 1px solid $btn_bg;
 		}
 	}
 }
+
 .menu_fixed {
 	position: fixed;
 	z-index: 9999 !important;
@@ -310,16 +349,20 @@
 	box-shadow: 0px 10px 15px rgba(0, 0, 0, 0.05);
 	top: 0;
 	background-color: #562fc7;
+
 	.navbar-nav {
 		margin-left: 0;
 	}
-	.btn_1{
+
+	.btn_1 {
 		border: 1px solid #fff;
 		color: $black_color;
-		&:hover{
+
+		&:hover {
 			border: 1px solid $btn_bg;
 		}
 	}
+
 	.main-menu-item {
 		ul {
 			li .nav-link {
@@ -327,16 +370,20 @@
 			}
 		}
 	}
-	.main_logo{
+
+	.main_logo {
 		display: block;
 	}
-	.single_page_logo{
+
+	.single_page_logo {
 		display: none !important;
 	}
+
 	.menu_icon:after {
 		color: #fff;
 	}
-	.home_page_btn{
+
+	.home_page_btn {
 		color: $white-color;
 	}
 }
