@@ -15,6 +15,32 @@ class Meta extends Component {
 
         <link rel="shortcut icon" href="/static/favicon.ico" />
 
+        {/* Ecobit Styles */}
+        <link
+          rel="stylesheet"
+          href="/public/assets/styles/css/bootstrap.min.css"
+        />
+        <link rel="stylesheet" href="/public/assets/styles/css/animate.css" />
+        <link
+          rel="stylesheet"
+          href="/public/assets/styles/css/owl.carousel.min.css"
+        />
+        <link rel="stylesheet" href="/public/assets/styles/css/all.css" />
+        <link rel="stylesheet" href="/public/assets/styles/css/flaticon.css" />
+        <link
+          rel="stylesheet"
+          href="/public/assets/styles/css/themify-icons.css"
+        />
+        <link
+          rel="stylesheet"
+          href="/public/assets/styles/css/magnific-popup.css"
+        />
+        <link rel="stylesheet" href="/public/assets/styles/css/slick.css" />
+        <link
+          rel="stylesheet"
+          href="/public/assets/styles/compiled/style.css"
+        />
+
         <title>{meta.meta_ogTitle}</title>
       </Head>
     )

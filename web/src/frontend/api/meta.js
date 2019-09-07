@@ -8,7 +8,7 @@ export const meta = {
   meta_description: '',
   meta_ogTitle: 'Adify - Leading Ad serving API for publishers',
   tagline: <>Leading Ad serving API for publishers</>,
-  image: 'https://i.ibb.co/pQRG5ZT/PaprInk.jpg',
+  image: 'https://i.ibb.co/tD7NDDx/logo.png',
   favicon: `/static/favicon.ico`,
   email: `info@iqubex.com`,
   domain: 'https://adify.now.sh',

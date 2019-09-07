@@ -29,6 +29,8 @@
     "path": "^0.12.7",
     "react": "^16.9.0",
     "react-dom": "^16.9.0",
+    "react-landing-page": "^2.0.2",
+    "rebass": "^3.0.0-12",
     "styled-components": "^4.3.2",
     "webpack": "^4.39.1"
   },
