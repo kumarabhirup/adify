@@ -6,8 +6,6 @@ require('dotenv').config({ path: envFile })
 
 const withSass = require('@zeit/next-sass')
 const webpack = require('webpack')
-const Dotenv = require('dotenv-webpack')
-const path = require('path')
 
 module.exports = withSass({
   webpack(config) {
@@ -19,8 +17,10 @@ module.exports = withSass({
     )
 
     /**
-     * Also tried this to make `.env` work. But of no use.
+     * Tried all these to make `.env` work. But of no use.
+     * .env only works on Server side, but not on Client side
      */
+
     // const env = Object.keys(process.env).reduce((acc, curr) => {
     //   acc[`process.env.${curr}`] = JSON.stringify(process.env[curr])
     //   return acc
@@ -33,12 +33,12 @@ module.exports = withSass({
     //   systemvars: true
     // }))
 
-    config.plugins.push(
-      new webpack.EnvironmentPlugin({
-        GA_TRACKING_ID: 'UA-80291721-7',
-        ONESIGNAL_ID: 'something'
-      })
-    )
+    // config.plugins.push(
+    //   new webpack.EnvironmentPlugin({
+    //     GA_TRACKING_ID: process.env.GA_TRACKING_ID,
+    //     ONESIGNAL_ID: process.env.ONESIGNAL_ID,
+    //   })
+    // )
 
     return config
   },
