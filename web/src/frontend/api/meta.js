@@ -8,11 +8,9 @@ export const meta = {
   meta_description: '',
   meta_ogTitle: 'Adify - Ad serving API for publishers',
   tagline: <>Ad serving API for publishers</>,
-  image: 'https://i.ibb.co/tD7NDDx/logo.png',
-  lightLogo:
-    'https://discordapp.com/assets/065a456aee15f669a505172edc830b79.svg',
-  darkLogo:
-    'https://logodownload.org/wp-content/uploads/2017/11/discord-logo.png',
+  image: 'https://i.ibb.co/wMyWtxT/logo.png', // 'https://i.ibb.co/tD7NDDx/logo.png',
+  lightLogo: 'https://i.ibb.co/wMyWtxT/logo.png', // 'https://discordapp.com/assets/065a456aee15f669a505172edc830b79.svg',
+  darkLogo: 'https://i.ibb.co/LgGLh56/logo-dark.png',
   favicon: `/static/favicon.ico`,
   email: `info@iqubex.com`,
   domain: 'https://adify.now.sh',
