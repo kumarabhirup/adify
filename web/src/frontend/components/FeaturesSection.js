@@ -2,7 +2,7 @@ import { featuresSection } from '../api/meta'
 
 export default function FeaturesSection() {
   return (
-    <section className="use_sasu padding_top">
+    <section id="featuresSection" className="use_sasu padding_top">
       <div className="container">
         <div className="row justify-content-center">
           {featuresSection.map(({ image, title, excerpt }, i) => (

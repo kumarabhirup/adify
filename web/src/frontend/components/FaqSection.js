@@ -2,7 +2,10 @@ import { faqSection } from '../api/meta'
 
 export default function FaqSection() {
   return (
-    <section className="accordion_part padding_bottom padding_top">
+    <section
+      id="faqSection"
+      className="accordion_part padding_bottom padding_top"
+    >
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-lg-6">

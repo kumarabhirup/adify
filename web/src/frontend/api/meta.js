@@ -5,9 +5,10 @@ export const meta = {
   title: 'Adify',
   social: 'adifytech',
   website: 'https://adify.now.sh', // soon https://adify.tech
-  meta_description: '',
-  meta_ogTitle: 'Adify - Ad serving API for publishers',
-  tagline: <>Ad serving API for publishers</>,
+  meta_description:
+    'Sell your AdSpace like never before. The deal maker of publishers and advertisers!',
+  meta_ogTitle: 'Adify - Sell your AdSpace in a few clicks',
+  tagline: <>Sell your AdSpace like never before</>,
   image: 'https://i.ibb.co/wMyWtxT/logo.png', // 'https://i.ibb.co/tD7NDDx/logo.png',
   lightLogo: 'https://i.ibb.co/wMyWtxT/logo.png', // 'https://discordapp.com/assets/065a456aee15f669a505172edc830b79.svg',
   darkLogo: 'https://i.ibb.co/LgGLh56/logo-dark.png',
@@ -26,118 +27,114 @@ export const social = [
 export const menu = [
   {
     linkName: 'Home',
-    href: '/index',
+    href: '/',
   },
   {
     linkName: 'Features',
-    href: '/features',
+    href: '/#featuresSection',
   },
   {
-    linkName: 'Pricing',
-    href: '/pricing',
+    linkName: 'Subscribe to updates',
+    href: '/#subscribeSection',
   },
   {
-    linkName: 'Contact',
-    href: '/contact',
+    linkName: 'FAQ',
+    href: '/#faqSection',
   },
 ]
 
 export const landingSection = {
-  bannerImage: 'https://i.ibb.co/3p6nCKw/banner-img.png',
+  bannerImage: 'https://i.ibb.co/fFrj25L/about-img.png',
   title: meta.tagline,
-  excerpt:
-    'Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.',
+  excerpt: (
+    <>
+      Don't get spammed in email by the uninterested advertisers. Don't
+      negotiate with businesses for adspaces. Don't manage their invoices when
+      Adify's seamless checkout process does it all for you!
+    </>
+  ),
   button: {
-    href: '/trial',
-    linkName: 'Sign up now',
+    href: '/#subscribeSection',
+    linkName: 'Subscribe',
   },
 }
 
 export const featuresSection = [
   {
-    image: 'https://i.ibb.co/KNQ1yZ8/feature-icon-1.png',
-    title: 'Fully Secured',
+    image: 'https://i.ibb.co/YpMBV0v/feature-icon-3.png',
+    title: 'Create Adspace',
     excerpt:
-      'Made great fish shall beast, fourth land also Doesn tree without lesser likeness he fruit of called gathering day whose called were have',
+      'Create custom adspaces worth any amount of money. Show the adspace on your website or app by the code you get when you create an Adify Adspace.',
+  },
+  {
+    image: 'https://i.ibb.co/KNQ1yZ8/feature-icon-1.png',
+    title: 'Let your sponsors buy',
+    excerpt:
+      "They'll click your adspace and pay you the amount of money you asked for the adspace through our platform. The Ad campaign will start automatically, you ever care?",
   },
   {
     image: 'https://i.ibb.co/R2shmpP/feature-icon-2.png',
-    title: 'Unique Design',
+    title: 'Earn while you sleep',
     excerpt:
-      'Made great fish shall beast, fourth land also Doesn tree without lesser likeness he fruit of called gathering day whose called were have',
-  },
-  {
-    image: 'https://i.ibb.co/YpMBV0v/feature-icon-3.png',
-    title: 'A Volunteer',
-    excerpt:
-      'Made great fish shall beast, fourth land also Doesn tree without lesser likeness he fruit of called gathering day whose called were have',
+      'Leave those AdSpaces on your website and Adify will take care of invoices, transactions and ad campaigns for you. You can moderate the Adspaces as well.',
   },
 ]
 
 export const featuresInDetailSection = [
   {
     iconImage: 'https://i.ibb.co/qy71mMJ/Icon-1.png',
-    image: 'https://i.ibb.co/fFrj25L/about-img.png',
+    image: 'https://i.ibb.co/3p6nCKw/banner-img.png',
     title: (
       <>
-        Easy To <br />
-        Access Social Media
+        Exclusive Adify API <br />
+        To sell custom ads
       </>
     ),
     excerpt:
-      "Saw shall light. Us their to place had creepeth day night great wher appear to. Hath, called, sea called, gathering wherein open make living Female itself gathering man. Waters and, two. Bearing. Saw she'd all let she'd lights abundantly blessed.",
+      'You run a website that has monetization strategy built? You hate typical box-like AdSense ads? You like dynamicity? But, hate doing checkout processes for your sponsors? Well, we have covered you all.',
     button: {
-      linkName: 'Learn More',
-      href: '/',
+      linkName: 'Subscribe for updates',
+      href: '/#subscribeSection',
     },
   },
   {
     iconImage: 'https://i.ibb.co/X4JZPmf/Icon-2.png',
-    image: 'https://i.ibb.co/jy5mfhn/about-img-1.png',
-    title: 'Easy To Access Social Media',
-    excerpt:
-      "Saw shall light. Us their to place had creepeth day night great wher appear to. Hath, called, sea called, gathering wherein open make living Female itself gathering man. Waters and, two. Bearing. Saw she'd all let she'd lights abundantly blessed.",
+    image: 'https://i.ibb.co/NCJbxXd/undraw-complete-task-u2c3.png',
+    title: 'Tired of using insensible Adsense Ads?',
+    excerpt: (
+      <>
+        If you are a{' '}
+        <strong>niche publisher with less but quality traffic</strong>, Adsense
+        won't help you run your website. With Adify, you can{' '}
+        <strong>decide the worth of your own adspace</strong> and sell it to the
+        sponsors who trust you and your audience. Adify allows you to{' '}
+        <strong>show Adsense ads when adspace is empty.</strong>
+      </>
+    ),
     button: {
-      linkName: 'Learn More',
-      href: '/',
+      linkName: 'Subscribe for updates',
+      href: '/#subscribeSection',
     },
   },
-  // {
-  //   iconImage: 'https://i.ibb.co/R2shmpP/feature-icon-2.png',
-  //   embed: (
-  //     <>
-  //       <iframe
-  //         width="100%"
-  //         height={315 * 1}
-  //         src="https://www.youtube.com/embed/eZe4Q_58UTU"
-  //         frameBorder="0"
-  //         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
-  //         allowFullScreen
-  //         title="Adify YouTube Video"
-  //       ></iframe>
-  //     </>
-  //   ),
-  //   title: 'Watch the video!',
-  //   excerpt: 'The video shall throw light on what the core idea of Adify is.',
-  // },
 ]
 
 export const subscribeSection = {
   title: (
     <>
-      Experience the most simple way to <br />
-      manage adverts
+      🚧 Work In Progress 🚧 <br />
+      👉 Subscribe for updates 👈
     </>
   ),
   excerpt: (
     <>
-      <strong>26,567 people</strong> subscribed for the{' '}
-      <strong>gamechanging service</strong>.
+      <strong style={{ color: 'green' }}>26,567 people</strong> subscribed for a{' '}
+      <strong>better publishing experience</strong>
     </>
   ),
+  belowText: <>Subscribers will get free access to Adify after launch day.</>,
   placeholder: 'Enter your email',
   button: {
-    href: '/trial',
+    href: '/#subscribeSection',
     linkName: 'Subscribe',
   },
 }
@@ -169,19 +166,67 @@ export const showcasingSection = [
 
 export const faqSection = {
   title: 'Frequently Asked Questions',
-  excerpt:
-    'Beginning Gathered Divided Upon Blessed Seasons Form Herb Years Subdue',
+  excerpt: 'Necessary questions that need an answer',
   questions: [
     {
-      question: 'What exactly is an Ad Serving API?',
-      answer: <>Really nice question.</>,
-    },
-    {
-      question: 'When will the API be ready to use?',
+      question: 'Will Adify be absolutely free for pre-launch subscribers?',
       answer: (
         <>
-          When the API will be ready for use, you'll be notified in your mail
-          inbox. To get notified, Subscribe to Adify.
+          Yes! If you subscribed before launch day, and sign in with appropriate
+          Email Id after the Adify launch, you'll have to bear NO transaction
+          charges for all your deals on Adify Platform. Early subscribers will
+          get access to unlimited Adspaces, and every thing will be free for
+          them.
+        </>
+      ),
+    },
+    {
+      question: 'Is this just another useless Ad Network?',
+      answer: (
+        <>
+          No! This is NOT an Ad Network. This is NOT a portal where ads are
+          bought and sold. It is essentially a SaaS product made to make deals
+          between publishers and advertisers more easy.
+        </>
+      ),
+    },
+    {
+      question: 'Do I have control over my adspace? Can I ban ads?',
+      answer: (
+        <>
+          Yes, you can choose to be a moderator in settings. You can ban ads
+          that you don't like. In that case, the money of the advertiser will be
+          refunded.
+        </>
+      ),
+    },
+    {
+      question: 'What kinds of adspaces can be set up?',
+      answer: (
+        <>
+          Typical box-like banner ads, native promotional ads, dynamic
+          promotional ads (like the promotions you see on Reddit and Twitter)
+          can be set up in a few minutes with Adify.
+        </>
+      ),
+    },
+    {
+      question: "What if my adspace isn't bought and is empty?",
+      answer: (
+        <>
+          For empty adspaces, you can setup Adsense Ads with a "Buy this
+          Adspace" text below. Most of it will be customizable. You'll love it.
+        </>
+      ),
+    },
+    {
+      question: 'What if two businesses booked the same adspace?',
+      answer: (
+        <>
+          The sponsor that paid higher will get higher impressions. It will be
+          in proportion with bidding that other sponsor has done. You don't need
+          to care about your ads. They'll be served with accuracy. At max, 5
+          bussiness can have one adspace.
         </>
       ),
     },
@@ -202,46 +247,9 @@ export const faqSection = {
 
 export const footer = {
   excerpt:
-    "Gathered. Under is whose you'll to make years is mat lights thing together fish made forth thirds cattle behold won't. Fourth creeping first female.",
+    'No, this is not an Ad Network. This is a cool product that allows you to get quick 💸 cash flowing by selling your Web and App Adspaces to businesses.',
   copyright: (
     <>Copyright &copy; {new Date().getFullYear()} All rights reserved.</>
   ),
-  links: [
-    {
-      sectionName: 'About Us',
-      menu: [
-        {
-          href: '/',
-          linkName: 'Managed Website',
-        },
-      ],
-    },
-    {
-      sectionName: 'Quick Links',
-      menu: [
-        {
-          href: '/',
-          linkName: 'Managed Website',
-        },
-      ],
-    },
-    {
-      sectionName: 'My Account',
-      menu: [
-        {
-          href: '/',
-          linkName: 'Managed Website',
-        },
-      ],
-    },
-    {
-      sectionName: 'Resources',
-      menu: [
-        {
-          href: '/',
-          linkName: 'Managed Website',
-        },
-      ],
-    },
-  ],
+  links: [],
 }

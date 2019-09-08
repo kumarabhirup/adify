@@ -56,8 +56,10 @@ export default function Header() {
                 </ul>
               </div>
 
-              <Link href="/signup">
-                <a className="d-none d-sm-block btn_1 home_page_btn">Sign Up</a>
+              <Link href="/#subscribeSection">
+                <a className="d-none d-sm-block btn_1 home_page_btn">
+                  Get Free Access
+                </a>
               </Link>
             </nav>
           </div>

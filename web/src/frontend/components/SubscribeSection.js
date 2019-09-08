@@ -2,7 +2,11 @@ import { subscribeSection } from '../api/meta'
 
 export default function SubscribeSection(props) {
   return (
-    <section className="subscribe_part padding_bottom padding_top" {...props}>
+    <section
+      id="subscribeSection"
+      className="subscribe_part padding_bottom padding_top"
+      {...props}
+    >
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-lg-8">
@@ -31,6 +35,9 @@ export default function SubscribeSection(props) {
                     </div>
                   </div>
                 </form>
+                <p style={{ fontSize: '15px', float: 'left' }}>
+                  {subscribeSection.belowText}
+                </p>
               </div>
             </div>
           </div>
