@@ -146,7 +146,7 @@
 	.main_menu .main-menu-item {
 		text-align: left !important;
 		box-shadow: 0 15px 16px 0 rgba($color: #000000, $alpha: .1);
-		color: $black-color !important;
+		// color: $black-color !important;
 
 		.nav-item {
 			padding: 10px 15px !important;
@@ -166,7 +166,6 @@
 		width: 100%;
 		background-color: $white-color;
 		text-align: center !important;
-		color: $black-color !important;
 	}
 
 	.dropdown {
@@ -369,6 +368,36 @@
 		ul {
 			li .nav-link {
 				color: #fff !important;
+			}
+		}
+	}
+
+	@media #{$small_mobile} {
+		.main-menu-item {
+			ul {
+				li .nav-link {
+					color: #000 !important;
+				}
+			}
+		}
+	}
+
+	@media #{$large_mobile} {
+		.main-menu-item {
+			ul {
+				li .nav-link {
+					color: #000 !important;
+				}
+			}
+		}
+	}
+
+	@media #{$tab_device} {
+		.main-menu-item {
+			ul {
+				li .nav-link {
+					color: #000 !important;
+				}
 			}
 		}
 	}
