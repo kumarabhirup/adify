@@ -25,8 +25,8 @@
       "dest": "/web/$1"
     },
     {
-      "src": "/public",
-      "dest": "/web/src/public"
+      "src": "/public/(.*)",
+      "dest": "/web/src/public/$1"
     }
   ]
 }
