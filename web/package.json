@@ -4,7 +4,7 @@
   "scripts": {
     "start": "npm run gulp && NODE_ENV=production node src/server/index.js",
     "dev": "npm run gulp && NODE_ENV=development node src/server/index.js",
-    "build": "next build",
+    "build": "next build && next export",
     "next:export": "next export",
     "gulp": "gulp",
     "gulp:watch": "gulp watch",
