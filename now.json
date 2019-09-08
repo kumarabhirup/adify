@@ -16,7 +16,7 @@
       "use": "@now/node-server"
     },
     {
-      "src": "web/next.config.js",
+      "src": "web/now.config.js",
       "use": "@now/next"
     }
   ],
