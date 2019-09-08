@@ -5,7 +5,7 @@
     "start": "npm run gulp && NODE_ENV=production node src/server/index.js",
     "dev": "npm run gulp && NODE_ENV=development node src/server/index.js",
     "next:export": "next export",
-    "build": "next build && npm run next:export && npm run gulp",
+    "build": "npm run gulp && next build && npm run next:export",
     "gulp": "gulp",
     "gulp:watch": "gulp watch",
     "lint": "eslint . --ext .js,.jsx",
