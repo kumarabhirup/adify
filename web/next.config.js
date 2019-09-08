@@ -42,4 +42,5 @@ module.exports = withSass({
 
     return config
   },
+  target: 'serverless',
 })

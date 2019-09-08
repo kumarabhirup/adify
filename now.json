@@ -1,5 +1,4 @@
 {
-  "target": "serverless",
   "version": 2,
   "name": "adify",
   "public": true,
