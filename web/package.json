@@ -8,8 +8,8 @@
     "next:export": "next export",
     "gulp": "gulp",
     "gulp:watch": "gulp watch",
-    "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "lint": "eslint . --ext .js,.jsx",
+    "lint:fix": "eslint . --ext .js,.jsx --fix"
   },
   "author": "Kumar Abhirup",
   "repository": {
