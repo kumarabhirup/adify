@@ -287,7 +287,7 @@
 .menu_icon {
 	&:after {
 		position: absolute;
-		content: "";
+		content: "🍔";
 		top: 7px;
 		left: 0px;
 		font-family: 'themify';
@@ -295,12 +295,12 @@
 		font-size: 25px;
 		width: 20px;
 		height: 20px;
-		background: linear-gradient(to bottom,
-				black, black 20%,
-				white 20%, white 40%,
-				black 40%, black 60%,
-				white 60%, white 80%,
-				black 80%, black 100%);
+		// background: linear-gradient(to bottom,
+		// 		black, black 20%,
+		// 		white 20%, white 40%,
+		// 		black 40%, black 60%,
+		// 		white 60%, white 80%,
+		// 		black 80%, black 100%);
 	}
 }
 
