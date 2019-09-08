@@ -12,9 +12,14 @@
     }
   },
   "builds": [{
-    "src": "web/package.json",
-    "use": "@now/next"
-  }],
+      "src": "web/src/server/index.js",
+      "use": "@now/node-server"
+    },
+    {
+      "src": "web/next.config.js",
+      "use": "@now/next"
+    }
+  ],
   "routes": [{
     "src": "/(.*)",
     "dest": "/web/$1"
