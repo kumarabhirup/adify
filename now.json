@@ -21,7 +21,12 @@
     }
   ],
   "routes": [{
-    "src": "/(.*)",
-    "dest": "/web/$1"
-  }]
+      "src": "/(.*)",
+      "dest": "/web/$1"
+    },
+    {
+      "src": "/public",
+      "dest": "/web/src/public"
+    }
+  ]
 }
