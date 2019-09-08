@@ -6,6 +6,8 @@ import LandingSection from '../src/frontend/components/LandingSection'
 import ShowcasingSection from '../src/frontend/components/ShowcasingSection'
 import SubscribeSection from '../src/frontend/components/SubscribeSection'
 import Footer from '../src/frontend/components/Footer'
+import FeaturesSection from '../src/frontend/components/FeaturesSection'
+import FeaturesInDetailSection from '../src/frontend/components/FeaturesInDetailSection'
 
 export default function HomePage() {
   console.log(process.env.GA_TRACKING_ID) // env does not work. issue 👉 https://github.com/zeit/next.js/issues/7320
@@ -18,6 +20,8 @@ export default function HomePage() {
       <>
         <Header />
         <LandingSection />
+        <FeaturesSection />
+        <FeaturesInDetailSection />
         <SubscribeSection />
         <ShowcasingSection />
         <Footer />

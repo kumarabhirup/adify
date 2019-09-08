@@ -18,6 +18,13 @@ export const meta = {
   domain: 'https://adify.now.sh',
 }
 
+export const social = [
+  { name: 'facebook', link: 'https://facebook.com/adify' },
+  { name: 'twitter', link: 'https://twitter.com/adify' },
+  { name: 'github', link: 'https://github.com/iqubex-technologies/adify' },
+  { name: 'youtube', link: 'https://youtube.com/c/Iqubex' },
+]
+
 export const menu = [
   {
     linkName: 'Home',
@@ -48,6 +55,75 @@ export const landingSection = {
   },
 }
 
+export const featuresSection = [
+  {
+    image: 'https://i.ibb.co/KNQ1yZ8/feature-icon-1.png',
+    title: 'Fully Secured',
+    excerpt:
+      'Made great fish shall beast, fourth land also Doesn tree without lesser likeness he fruit of called gathering day whose called were have',
+  },
+  {
+    image: 'https://i.ibb.co/R2shmpP/feature-icon-2.png',
+    title: 'Unique Design',
+    excerpt:
+      'Made great fish shall beast, fourth land also Doesn tree without lesser likeness he fruit of called gathering day whose called were have',
+  },
+  {
+    image: 'https://i.ibb.co/YpMBV0v/feature-icon-3.png',
+    title: 'A Volunteer',
+    excerpt:
+      'Made great fish shall beast, fourth land also Doesn tree without lesser likeness he fruit of called gathering day whose called were have',
+  },
+]
+
+export const featuresInDetailSection = [
+  {
+    iconImage: 'https://i.ibb.co/qy71mMJ/Icon-1.png',
+    image: 'https://i.ibb.co/fFrj25L/about-img.png',
+    title: (
+      <>
+        Easy To <br />
+        Access Social Media
+      </>
+    ),
+    excerpt:
+      "Saw shall light. Us their to place had creepeth day night great wher appear to. Hath, called, sea called, gathering wherein open make living Female itself gathering man. Waters and, two. Bearing. Saw she'd all let she'd lights abundantly blessed.",
+    button: {
+      linkName: 'Learn More',
+      href: '/',
+    },
+  },
+  {
+    iconImage: 'https://i.ibb.co/X4JZPmf/Icon-2.png',
+    image: 'https://i.ibb.co/jy5mfhn/about-img-1.png',
+    title: 'Easy To Access Social Media',
+    excerpt:
+      "Saw shall light. Us their to place had creepeth day night great wher appear to. Hath, called, sea called, gathering wherein open make living Female itself gathering man. Waters and, two. Bearing. Saw she'd all let she'd lights abundantly blessed.",
+    button: {
+      linkName: 'Learn More',
+      href: '/',
+    },
+  },
+  // {
+  //   iconImage: 'https://i.ibb.co/R2shmpP/feature-icon-2.png',
+  //   embed: (
+  //     <>
+  //       <iframe
+  //         width="100%"
+  //         height={315 * 1}
+  //         src="https://www.youtube.com/embed/eZe4Q_58UTU"
+  //         frameBorder="0"
+  //         allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+  //         allowFullScreen
+  //         title="Adify YouTube Video"
+  //       ></iframe>
+  //     </>
+  //   ),
+  //   title: 'Watch the video!',
+  //   excerpt: 'The video shall throw light on what the core idea of Adify is.',
+  // },
+]
+
 export const subscribeSection = {
   title: (
     <>
@@ -57,7 +133,7 @@ export const subscribeSection = {
   ),
   excerpt: (
     <>
-      <strong>26,500 people</strong> subscribed for the{' '}
+      <strong>26,567 people</strong> subscribed for the{' '}
       <strong>gamechanging service</strong>.
     </>
   ),
@@ -138,10 +214,3 @@ export const footer = {
     },
   ],
 }
-
-export const social = [
-  { name: 'facebook', link: 'https://facebook.com/adify' },
-  { name: 'twitter', link: 'https://twitter.com/adify' },
-  { name: 'github', link: 'https://github.com/iqubex-technologies/adify' },
-  { name: 'youtube', link: 'https://youtube.com/c/Iqubex' },
-]
