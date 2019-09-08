@@ -1,6 +1,10 @@
 {
-  "name": "adify-monorepo",
-  "version": "0.0.1",
+  "name": "adify",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "packages/*"
+  ],
   "scripts": {
     "build-web": "(cd web && npm run build)",
     "build": "lerna run build --parallel",
@@ -13,24 +17,11 @@
     "test:ci": "NODE_ENV=test jest",
     "postinstall": "lerna bootstrap"
   },
+  "main": "index.js",
+  "repository": "git@github.com:iqubex-technologies/adify.git",
   "author": "Kumar Abhirup",
-  "repository": {
-    "url": "https://github.com/iqubex-technologies/adify"
-  },
   "license": "MIT",
-  "dependencies": {},
   "devDependencies": {
-    "babel-jest": "^24.8.0",
-    "enzyme": "^3.10.0",
-    "enzyme-adapter-react-16": "^1.14.0",
-    "enzyme-to-json": "^3.4.0",
-    "jest": "^24.8.0",
-    "jest-next-dynamic": "^1.0.0",
-    "jest-transform-graphql": "^2.1.0",
-    "lerna": "^3.16.4",
-    "now": "^16.1.1"
-  },
-  "engines": {
-    "node": ">=8.0.0 <11.0.0"
+    "lerna": "^3.16.4"
   }
 }
