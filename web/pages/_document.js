@@ -65,31 +65,31 @@ class MyDocument extends Document {
           )}
 
           <Head>
-            <script src="/public/assets/js/jquery-1.12.1.min.js"></script>
+            <script src="/static/assets/js/jquery-1.12.1.min.js"></script>
 
-            <script src="/public/assets/js/popper.min.js"></script>
+            <script src="/static/assets/js/popper.min.js"></script>
 
-            <script src="/public/assets/js/bootstrap.min.js"></script>
+            <script src="/static/assets/js/bootstrap.min.js"></script>
 
-            <script src="/public/assets/js/jquery.magnific-popup.js"></script>
+            <script src="/static/assets/js/jquery.magnific-popup.js"></script>
 
-            <script src="/public/assets/js/swiper.min.js"></script>
+            <script src="/static/assets/js/swiper.min.js"></script>
 
-            <script src="/public/assets/js/masonry.pkgd.js"></script>
+            <script src="/static/assets/js/masonry.pkgd.js"></script>
 
-            <script src="/public/assets/js/owl.carousel.min.js"></script>
-            <script src="/public/assets/js/jquery.nice-select.min.js"></script>
+            <script src="/static/assets/js/owl.carousel.min.js"></script>
+            <script src="/static/assets/js/jquery.nice-select.min.js"></script>
 
-            <script src="/public/assets/js/slick.min.js"></script>
-            <script src="/public/assets/js/jquery.counterup.min.js"></script>
-            <script src="/public/assets/js/waypoints.min.js"></script>
-            <script src="/public/assets/js/contact.js"></script>
-            <script src="/public/assets/js/jquery.ajaxchimp.min.js"></script>
-            <script src="/public/assets/js/jquery.form.js"></script>
-            <script src="/public/assets/js/jquery.validate.min.js"></script>
-            <script src="/public/assets/js/mail-script.js"></script>
+            <script src="/static/assets/js/slick.min.js"></script>
+            <script src="/static/assets/js/jquery.counterup.min.js"></script>
+            <script src="/static/assets/js/waypoints.min.js"></script>
+            <script src="/static/assets/js/contact.js"></script>
+            <script src="/static/assets/js/jquery.ajaxchimp.min.js"></script>
+            <script src="/static/assets/js/jquery.form.js"></script>
+            <script src="/static/assets/js/jquery.validate.min.js"></script>
+            <script src="/static/assets/js/mail-script.js"></script>
 
-            <script src="/public/assets/js/custom.js"></script>
+            <script src="/static/assets/js/custom.js"></script>
           </Head>
         </body>
       </html>

@@ -7,8 +7,8 @@ const sourcemaps = require('gulp-sourcemaps')
 
 sass.compiler = require('node-sass')
 
-const scssTask = () =>
-  gulp
+const scssTask = async () => {
+  await gulp
     .src('./src/public/assets/styles/*.scss')
     .pipe(sourcemaps.init())
     .pipe(sass().on('error', sass.logError))
@@ -16,8 +16,18 @@ const scssTask = () =>
     .pipe(sourcemaps.write())
     .pipe(gulp.dest('./src/public/assets/styles/compiled'))
 
+  await gulp
+    .src('./static/assets/styles/*.scss')
+    .pipe(sourcemaps.init())
+    .pipe(sass().on('error', sass.logError))
+    .pipe(postcss([autoprefixer(), cssnano()]))
+    .pipe(sourcemaps.write())
+    .pipe(gulp.dest('./static/assets/styles/compiled'))
+}
+
 const watch = () => {
   gulp.watch('./src/public/assets/styles/*.scss', gulp.series('scssTask'))
+  gulp.watch('./static/assets/styles/*.scss', gulp.series('scssTask'))
 }
 
 exports.scssTask = scssTask

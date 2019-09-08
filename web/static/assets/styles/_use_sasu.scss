@@ -1,0 +1,78 @@
+/************use_sasu css start***************/
+.use_sasu {
+    position: relative;
+    z-index: 1;
+    position: relative;
+    z-index: 99;
+
+    @media #{$tab} {
+        padding: 70px 0 30px;
+    }
+
+    @media #{$medium_device} {
+
+    }
+
+    .feature_icon_1 {
+        position: absolute;
+        left: 22%;
+        top: 15%;
+        z-index: -1;
+    }
+
+    .single_feature_part {
+        text-align: center;
+        padding: 0 15px;
+        @media #{$tab} {
+            margin-bottom: 40px;
+        }
+
+        @media #{$medium_device} {
+            
+        }
+        img {
+            margin-bottom: 33px;
+            height: 65px;
+
+            @media #{$tab} {
+                margin-bottom: 21px;
+            }
+
+            @media #{$medium_device} {
+
+            }
+
+            i {
+                color: $icon_color;
+                font-size: 24px;
+                @include transform_time(.6s);
+            }
+        }
+
+        h4 {
+            font-weight: 600;
+            font-size: 20px;
+            margin-bottom: 22px;
+
+            @media #{$small_mobile} {
+                margin-bottom: 15px;
+            }
+
+            @media #{$large_mobile} {
+                margin-bottom: 15px;
+            }
+
+            @media #{$tab_device} {
+                margin-bottom: 15px;
+            }
+
+            @media #{$medium_device} {}
+        }
+
+        p {
+            color: $font_3;
+            line-height: 1.8;
+            font-size: 15px;
+        }
+    }
+}
