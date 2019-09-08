@@ -1,57 +1,71 @@
 /************subscribe us css start***************/
-.subscribe_part{
+.subscribe_part {
+    background: #F5F7FA;
+
     position: relative;
     z-index: 1;
+
     .feature_icon_2 {
         position: absolute;
         right: 50%;
         bottom: 5%;
         z-index: -1;
-      }
-    h2{
+    }
+
+    h2 {
         font-size: 45px;
         font-weight: 600;
         line-height: 55px;
         margin-bottom: 77px;
-        @media #{$tab}{
+
+        @media #{$tab} {
             font-size: 25px;
             margin-bottom: 25px;
             line-height: 30px;
         }
-        @media #{$medium_device}{
+
+        @media #{$medium_device} {
             font-size: 30px;
             margin-bottom: 25px;
             line-height: 35px;
         }
     }
-    .btn_2{
+
+    .btn_2 {
         border-radius: 0;
         padding: 27px 44px;
-        @media #{$tab}{
+
+        @media #{$tab} {
             padding: 17px 15px;
         }
-        @media #{$large_mobile}{
+
+        @media #{$large_mobile} {
             margin-top: 0;
             padding: 13px;
         }
-        @media #{$tab_device}{
+
+        @media #{$tab_device} {
             margin-top: 0;
             padding: 13px;
-        }        
-        @media #{$medium_device}{
+        }
+
+        @media #{$medium_device} {
             padding: 13px;
         }
-    } 
-    .form-control{
+    }
+
+    .form-control {
         padding: 39px 20px;
         border-radius: 0;
         text-transform: uppercase;
         font-size: 14px;
         letter-spacing: 1.2px;
-        @media #{$tab}{
+
+        @media #{$tab} {
             padding: 25px 15px;
         }
-        @media #{$medium_device}{
+
+        @media #{$medium_device} {
             padding: 25px 15px;
         }
     }

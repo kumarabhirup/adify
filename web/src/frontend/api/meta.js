@@ -169,6 +169,39 @@ export const showcasingSection = [
   },
 ]
 
+export const faqSection = {
+  title: 'Frequently Asked Questions',
+  excerpt:
+    'Beginning Gathered Divided Upon Blessed Seasons Form Herb Years Subdue',
+  questions: [
+    {
+      question: 'What exactly is an Ad Serving API?',
+      answer: <>Really nice question.</>,
+    },
+    {
+      question: 'When will the API be ready to use?',
+      answer: (
+        <>
+          When the API will be ready for use, you'll be notified in your mail
+          inbox. To get notified, Subscribe to Adify.
+        </>
+      ),
+    },
+    {
+      question: 'How do I contact you?',
+      answer: (
+        <>
+          Email us at{' '}
+          <a href={`mailto:${meta.email}`}>
+            {meta.email.replace('@', ' [ at ] ')}
+          </a>{' '}
+          for any query you have.
+        </>
+      ),
+    },
+  ],
+}
+
 export const footer = {
   excerpt:
     "Gathered. Under is whose you'll to make years is mat lights thing together fish made forth thirds cattle behold won't. Fourth creeping first female.",
