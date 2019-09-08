@@ -8,10 +8,12 @@ import SubscribeSection from '../src/frontend/components/SubscribeSection'
 import Footer from '../src/frontend/components/Footer'
 import FeaturesSection from '../src/frontend/components/FeaturesSection'
 import FeaturesInDetailSection from '../src/frontend/components/FeaturesInDetailSection'
+import useIsMobile from '../src/frontend/components/hooks/useIsMobile'
 
 export default function HomePage() {
-  console.log(process.env.GA_TRACKING_ID) // env does not work. issue 👉 https://github.com/zeit/next.js/issues/7320
+  const isMobile = useIsMobile(991)
 
+  console.log(process.env.GA_TRACKING_ID) // env does not work. issue 👉 https://github.com/zeit/next.js/issues/7320
   return (
     <>
       <Head>
@@ -22,7 +24,11 @@ export default function HomePage() {
         <LandingSection />
         <FeaturesSection />
         <FeaturesInDetailSection />
-        <SubscribeSection />
+        <SubscribeSection
+          style={(() => {
+            if (isMobile) return { marginTop: '70px' }
+          })()}
+        />
         <ShowcasingSection />
         <Footer />
       </>

@@ -1,8 +1,8 @@
 import { subscribeSection } from '../api/meta'
 
-export default function SubscribeSection() {
+export default function SubscribeSection(props) {
   return (
-    <section className="subscribe_part padding_bottom">
+    <section className="subscribe_part padding_bottom" {...props}>
       <div className="container">
         <div className="row justify-content-center">
           <div className="col-lg-8">

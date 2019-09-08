@@ -1,9 +1,15 @@
-import React, { useState, useEffect } from 'react'
+import React from 'react'
 import Link from 'next/link'
 
 import { featuresInDetailSection } from '../api/meta'
 import useIsMobile from './hooks/useIsMobile'
 
+/**
+ * @name FeaturesInDetailSection
+ *
+ * @description The logic written below is flawed and only works to show 2 features.
+ *              Update appreiciated.
+ */
 export default function FeaturesInDetailSection() {
   const isMobile = useIsMobile()
 
@@ -14,6 +20,7 @@ export default function FeaturesInDetailSection() {
           const sectionClass = i % 2 === 0 ? `section_padding` : `right_time`
           const padding =
             featuresInDetailSection.length - 1 === i && `padding_bottom`
+
           return (
             <section className={`about_us ${sectionClass} ${padding}`} key={i}>
               <div className="container">
