@@ -7,10 +7,12 @@
     background-position: left top;
 
     @media #{$tab} {
+        background-color: $light_white;
         background-image: none;
     }
 
     @media #{$medium_device} {
+        background-color: $light_white;
         background-image: none;
     }
 
@@ -18,6 +20,14 @@
         display: table;
         width: 100%;
         height: 1020px;
+
+        @media #{$big_screen} {
+            margin-top: -20px;
+        }
+
+        @media #{$extra_big_screen} {
+            margin-top: -20px;
+        }
 
         .banner_text_iner {
             display: table-cell;
