@@ -1,10 +1,1 @@
-.env*
-
-node_modules
-# package-lock.json
-
-compiled
-dist
-generated
-.next
-.build
+node_modules/

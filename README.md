@@ -1,7 +1,7 @@
 # 🏄 adify.tech
 
 [![Type](https://img.shields.io/badge/type-monorepo-yellow.svg?style=flat-square)](https://github.com/KumarAbhirup/nodejs-boilerplate)
-[![emoji-log](https://cdn.rawgit.com/ahmadawais/stuff/ca97874/emoji-log/flat.svg)](https://github.com/ahmadawais/Emoji-Log/)
+[![emoji-log](https://cdn.jsdelivr.net/gh/ahmadawais/stuff@ca978741836412b5e33ce8561f5f95c933177067/emoji-log/flat.svg)](https://github.com/ahmadawais/Emoji-Log/)
 [![Twitter](https://img.shields.io/twitter/follow/kumar_abhirup.svg?style=social&label=@kumar_abhirup)](https://twitter.com/kumar_abhirup/)
 
 ## 📦 Setup
@@ -49,4 +49,4 @@ $ npm run dev # run development server
 
 **MIT - Source code by [Kumar Abhirup](https://kumar.now.sh)**
 
-_Follow me 👋 **on Twitter**_ →   [![Twitter](https://img.shields.io/twitter/follow/kumar_abhirup.svg?style=social&label=@kumar_abhirup)](https://twitter.com/kumar_abhirup/)
+_Follow me 👋 **on Twitter**_ → [![Twitter](https://img.shields.io/twitter/follow/kumar_abhirup.svg?style=social&label=@kumar_abhirup)](https://twitter.com/kumar_abhirup/)
