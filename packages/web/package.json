@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "next -p 3001",
     "start": "next start",
-    "build": "next build",
+    "build": "next export && next build",
     "lint": "eslint .",
     "lint:fix": "eslint . --fix"
   },
