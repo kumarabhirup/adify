@@ -6,6 +6,7 @@
     "packages/*"
   ],
   "scripts": {
+    "bootstrap": "lerna exec npm install",
     "build-web": "(cd web && npm run build)",
     "build": "lerna run build --parallel",
     "dev": "lerna run dev --parallel",
