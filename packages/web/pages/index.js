@@ -19,7 +19,7 @@ export default function HomePage() {
         >
           ZEIT Now
         </a>
-        {process.env.TEST}
+        ENV: {process.env.TEST}
         <Link href="/post/[pid]" as="/post/test">
           <a>Test post</a>
         </Link>
