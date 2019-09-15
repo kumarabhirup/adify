@@ -11,7 +11,7 @@ export default function HomePage() {
       </Head>
       <h1>Next.js on Now</h1>
       <h2>
-        Developed & Deployed with
+        Developed & Deployed with{' '}
         <a
           href="https://zeit.co/docs"
           target="_blank"
@@ -19,10 +19,10 @@ export default function HomePage() {
         >
           ZEIT Now
         </a>
-        <Link href="/post/[pid]" as="/post/test">
-          <a>Test post</a>
-        </Link>
       </h2>
+      <Link href="/post/[pid]" as="/post/test">
+        <a>Test post</a>
+      </Link>
     </main>
   )
 }
