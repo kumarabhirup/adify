@@ -8,7 +8,9 @@
     "start": "next start",
     "build": "next export && next build",
     "lint": "eslint .",
-    "lint:fix": "eslint . --fix"
+    "lint:fix": "eslint . --fix",
+    "test": "NODE_ENV=test jest --passWithNoTests --watch",
+    "test:ci": "NODE_ENV=test jest --passWithNoTests"
   },
   "dependencies": {
     "@zeit/next-sass": "^1.0.1",
@@ -30,6 +32,7 @@
     "eslint-plugin-prettier": "^3.0.1",
     "eslint-plugin-react": "^7.12.4",
     "eslint-plugin-react-hooks": "^2.0.1",
+    "jest": "^24.9.0",
     "prettier": "^1.16.4"
   }
 }
