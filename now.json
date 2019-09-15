@@ -6,7 +6,7 @@
   "scope": "iqubex-technologies",
   "build": {
     "env": {
-      "TEST": "THISTEST"
+      "TEST": "TEST"
     }
   },
   "builds": [{
