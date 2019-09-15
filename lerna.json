@@ -1,5 +1,4 @@
 {
-  "npmClient": "npm",
   "useWorkspaces": true,
   "packages": ["packages/*"],
   "version": "0.0.0"
