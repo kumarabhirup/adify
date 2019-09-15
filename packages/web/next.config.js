@@ -6,4 +6,5 @@ module.exports = withSass({
   env: {
     TEST: process.env.TEST,
   },
+  cssModules: true,
 })
