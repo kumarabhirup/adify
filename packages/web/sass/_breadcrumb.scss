@@ -1,0 +1,76 @@
+.breadcrumb {
+	position: relative;
+	z-index: 1;
+	text-align: center;
+	background-color: #3b13b0;
+
+	.breadcrumb_iner {
+		height: 475px;
+		width: 100%;
+		display: table;
+
+		.breadcrumb_iner_item {
+			display: table-cell;
+			vertical-align: middle;
+
+			h2 {
+				color: $white_color;
+				font-size: 48px;
+				font-weight: 600;
+				margin-bottom: 10px;
+				text-transform: capitalize;
+
+				@media #{$small_mobile} {
+					font-size: 35px;
+				}
+
+				@media #{$large_mobile} {
+					font-size: 35px;
+				}
+
+				@media #{$tab_device} {
+					font-size: 40px;
+				}
+
+				@media #{$medium_device} {
+					font-size: 50px;
+				}
+			}
+
+			h5 {
+				font-size: 15px;
+				font-weight: 500;
+				text-transform: uppercase;
+				color: $white_color;
+				margin-top: 23px;
+				span {
+					font-size: 15px;
+					position: relative;
+					z-index: 1;
+					margin: 0 18px;
+					&:after {
+						position: absolute;
+						content: "";
+						width: 8px;
+						height: 8px;
+						left: -4px;
+						top: 6px;
+						background-color: $white_color;
+						border-radius: 50%;
+					}
+				}
+			}
+
+			span {
+				margin: 0px 5px;
+				font-size: 12px;
+			}
+
+		}
+	}
+
+}
+
+.breadcrumb {
+	margin-bottom: 0px !important;
+}

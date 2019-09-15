@@ -1,28 +1,39 @@
-import React from 'react'
 import Head from 'next/head'
-import Link from 'next/link'
-import '../sass/index.sass'
+
+import { meta } from '../src/api/meta'
+import Header from '../src/components/Header'
+import LandingSection from '../src/components/LandingSection'
+import SubscribeSection from '../src/components/SubscribeSection'
+import FeaturesSection from '../src/components/FeaturesSection'
+import FeaturesInDetailSection from '../src/components/FeaturesInDetailSection'
+import FaqSection from '../src/components/FaqSection'
+import Footer from '../src/components/Footer'
+import useIsMobile from '../src/components/hooks/useIsMobile'
+
+import '../sass/style.scss'
 
 export default function HomePage() {
+  const isMobile = useIsMobile(991)
+
+  console.log(process.env.GA_TRACKING_ID) // env does not work. issue 👉 https://github.com/zeit/next.js/issues/7320
   return (
-    <main>
+    <>
       <Head>
-        <title>Next.js on Now</title>
+        <title>{meta.meta_ogTitle}</title>
       </Head>
-      <h1>Next.js on Now</h1>
-      <h2>
-        Developed & Deployed with{' '}
-        <a
-          href="https://zeit.co/docs"
-          target="_blank"
-          rel="noreferrer noopener"
-        >
-          ZEIT Now
-        </a>
-      </h2>
-      <Link href="/post/[pid]" as="/post/test">
-        <a>Test post</a>
-      </Link>
-    </main>
+      <>
+        <Header />
+        <LandingSection />
+        <FeaturesSection />
+        <FeaturesInDetailSection />
+        <SubscribeSection
+          style={(() => {
+            if (isMobile) return { marginTop: '70px' }
+          })()}
+        />
+        <FaqSection />
+        <Footer />
+      </>
+    </>
   )
 }
