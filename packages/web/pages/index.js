@@ -10,7 +10,7 @@ import FaqSection from '../src/components/FaqSection'
 import Footer from '../src/components/Footer'
 import useIsMobile from '../src/components/hooks/useIsMobile'
 
-import '../sass/style.scss'
+// import '../sass/style.scss'
 
 export default function HomePage() {
   const isMobile = useIsMobile(991)
