@@ -6,7 +6,7 @@
   "scope": "iqubex-technologies",
   "build": {
     "env": {
-      "TEST": "@test"
+      "ADIFY_GA_TRACKING_ID": "@adifyGaTrackingId"
     }
   },
   "builds": [{
