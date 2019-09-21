@@ -10,12 +10,8 @@ import FaqSection from '../src/components/FaqSection'
 import Footer from '../src/components/Footer'
 import useIsMobile from '../src/components/hooks/useIsMobile'
 
-// import '../sass/style.scss'
-
 export default function HomePage() {
   const isMobile = useIsMobile(991)
-
-  console.log(process.env.GA_TRACKING_ID) // env does not work. issue 👉 https://github.com/zeit/next.js/issues/7320
   return (
     <>
       <Head>
