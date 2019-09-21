@@ -45,7 +45,6 @@ export default function SubscribeSection(props) {
     e.preventDefault()
 
     setIsSubmitting(true)
-    setHasSubmitted(false)
     setIsError(false)
 
     await steinStore
@@ -55,6 +54,7 @@ export default function SubscribeSection(props) {
           setIsSubmitting(false)
           setIsError(false)
           setHasSubmitted(true)
+          setEmail('')
         } else {
           setIsSubmitting(false)
           setHasSubmitted(false)
