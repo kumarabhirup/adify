@@ -2,7 +2,7 @@
   "version": 2,
   "name": "adify",
   "public": true,
-  "alias": ["adify"],
+  "alias": ["adify", "adify.tech"],
   "scope": "iqubex-technologies",
   "build": {
     "env": {
