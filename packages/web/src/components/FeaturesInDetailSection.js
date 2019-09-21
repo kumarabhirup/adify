@@ -1,5 +1,6 @@
 import React from 'react'
 import Link from 'next/link'
+import { Element, Link as ScrollLink } from 'react-scroll'
 
 import { featuresInDetailSection } from '../api/meta'
 import useIsMobile from './hooks/useIsMobile'
@@ -14,7 +15,7 @@ export default function FeaturesInDetailSection() {
   const isMobile = useIsMobile()
 
   return (
-    <>
+    <Element name="featuresInDetailSection" id="featuresInDetailSection">
       {featuresInDetailSection.map(
         ({ iconImage, image, embed, title, excerpt, button }, i) => {
           const sectionClass = i % 2 === 0 ? `section_padding` : `right_time`
@@ -40,9 +41,17 @@ export default function FeaturesInDetailSection() {
                       <h2>{title}</h2>
                       <p>{excerpt}</p>
                       {button && (
-                        <Link href={button.href}>
-                          <a className="btn_2">{button.linkName}</a>
-                        </Link>
+                        <ScrollLink
+                          to={button.to}
+                          spy
+                          smooth
+                          duration={1000}
+                          offset={button.scrollOffset}
+                        >
+                          <a className="btn_2" href={button.href}>
+                            {button.linkName}
+                          </a>
+                        </ScrollLink>
                       )}
                     </div>
                   </div>
@@ -57,6 +66,7 @@ export default function FeaturesInDetailSection() {
                   )}
                 </div>
               </div>
+
               <img
                 src="https://i.ibb.co/2dkP5zj/Ellipse-4.png"
                 alt=""
@@ -66,6 +76,6 @@ export default function FeaturesInDetailSection() {
           )
         }
       )}
-    </>
+    </Element>
   )
 }

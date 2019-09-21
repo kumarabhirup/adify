@@ -26,20 +26,22 @@ export const social = [
 
 export const menu = [
   {
-    linkName: 'Home',
-    href: '/',
-  },
-  {
     linkName: 'Features',
     href: '/#featuresSection',
+    to: 'featuresSection',
+    scrollOffset: -100,
   },
   {
     linkName: 'Subscribe to updates',
     href: '/#subscribeSection',
+    to: 'subscribeSection',
+    scrollOffset: -120,
   },
   {
     linkName: 'FAQ',
     href: '/#faqSection',
+    to: 'faqSection',
+    scrollOffset: -100,
   },
 ]
 
@@ -95,6 +97,8 @@ export const featuresInDetailSection = [
     button: {
       linkName: 'Subscribe for updates',
       href: '/#subscribeSection',
+      to: 'subscribeSection',
+      scrollOffset: -120,
     },
   },
   {
@@ -114,6 +118,8 @@ export const featuresInDetailSection = [
     button: {
       linkName: 'Subscribe for updates',
       href: '/#subscribeSection',
+      to: 'subscribeSection',
+      scrollOffset: -120,
     },
   },
 ]
