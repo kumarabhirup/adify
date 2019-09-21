@@ -127,8 +127,8 @@ export const featuresInDetailSection = [
 export const subscribeSection = {
   title: (
     <>
-      🚧 Work In Progress 🚧 <br />
-      👉 Subscribe for updates 👈
+      👉 Subscribe for updates 👈 <br />
+      Free for pre-launch subscribers
     </>
   ),
   excerpt: (

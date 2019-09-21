@@ -2,11 +2,14 @@
   "version": 2,
   "name": "adify",
   "public": true,
-  "alias": ["adify", "adify.tech"],
+  "alias": ["adify", "adify.tech", "www.adify.tech"],
   "scope": "iqubex-technologies",
   "build": {
     "env": {
-      "ADIFY_GA_TRACKING_ID": "@adifygatrackingid"
+      "ADIFY_GA_TRACKING_ID": "@adifygatrackingid",
+      "ADIFY_STEIN_API_KEY": "@adifysteinapikey",
+      "ADIFY_STEIN_API_USERNAME": "@adifysteinapiusername",
+      "ADIFY_STEIN_API_PASSWORD": "@adifysteinapipassword"
     }
   },
   "builds": [{
