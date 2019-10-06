@@ -25,6 +25,6 @@
     "continue": true
   }, {
     "src": "/api/(.*)",
-    "dest": "packages/backend/src/$"
+    "dest": "packages/backend/src$1"
   }]
 }
