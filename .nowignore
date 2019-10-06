@@ -2,10 +2,6 @@
 package-lock.json
 node_modules/
 .remy/
-
-# build
-# dist
-
 .DS_Store
 *.tgz
 my-app*
