@@ -5,7 +5,7 @@ import * as jwt from 'jsonwebtoken'
 import * as cors from 'cors'
 
 // temporary
-import * as express from 'express'
+import express from 'express'
 
 require('dotenv').config()
 
