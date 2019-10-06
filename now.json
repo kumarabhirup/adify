@@ -24,7 +24,7 @@
     "dest": "packages/web$1",
     "continue": true
   }, {
-    "src": "/api/(.*)",
+    "src": "/api/**",
     "dest": "packages/backend/src/$1.ts"
   }]
 }
