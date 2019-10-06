@@ -21,7 +21,7 @@
   }],
   "routes": [{
     "src": "/api/(.*)",
-    "dest": "packages/backend/src/$1"
+    "dest": "packages/backend/src/$1.ts"
   }, {
     "src": "(.*)",
     "dest": "packages/web$1",
