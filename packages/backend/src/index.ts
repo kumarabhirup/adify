@@ -21,7 +21,7 @@ server.use(
 )
 
 // Routes
-server.get('/', (req, res) => {
+server.get('/hi', (req, res) => {
   res.send('<h1>Hooray!</h1>')
 })
 
