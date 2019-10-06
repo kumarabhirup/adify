@@ -20,11 +20,11 @@
     "use": "@now/node-server"
   }],
   "routes": [{
+    "src": "/api/(.*)",
+    "dest": "packages/backend/src/$1"
+  }, {
     "src": "(.*)",
     "dest": "packages/web$1",
     "continue": true
-  }, {
-    "src": "/api/(.*)",
-    "dest": "packages/backend/src/$1"
   }]
 }
