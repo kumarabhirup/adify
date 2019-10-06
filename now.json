@@ -16,7 +16,7 @@
     "src": "packages/web/package.json",
     "use": "@now/next"
   }, {
-    "src": "packages/backend/src/**/*.ts",
+    "src": "packages/backend/src/*.ts",
     "use": "@now/node"
   }],
   "routes": [{
