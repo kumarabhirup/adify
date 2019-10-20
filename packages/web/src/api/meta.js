@@ -2,19 +2,21 @@ import React from 'react'
 
 export const meta = {
   name: 'Adify',
-  title: 'Adify',
-  social: 'adifytech',
-  website: 'https://adify.now.sh', // soon https://adify.tech
+  title: 'Adify - Sell your AdSpace in a few clicks', // <title></title>
+  coverImage: 'https://i.ibb.co/SfmDpSH/Adify-Cover.jpg',
+  website: 'https://adify.tech',
+  domain: 'https://adify.tech',
+  social: 'adifyTech',
+  fbPageId: '104253327644041',
+  email: `info@iqubex.com`,
+  meta_ogTitle: 'Adify - Sell your AdSpace in a few clicks', // Facebook, Twitter card
+  tagline: <>Sell your AdSpace like never before</>,
   meta_description:
     'Sell your AdSpace like never before. The deal maker of publishers and advertisers!',
-  meta_ogTitle: 'Adify - Sell your AdSpace in a few clicks',
-  tagline: <>Sell your AdSpace like never before</>,
-  image: 'https://i.ibb.co/wMyWtxT/logo.png', // 'https://i.ibb.co/tD7NDDx/logo.png',
-  lightLogo: 'https://i.ibb.co/wMyWtxT/logo.png', // 'https://discordapp.com/assets/065a456aee15f669a505172edc830b79.svg',
+  image: 'https://i.ibb.co/wMyWtxT/logo.png',
+  lightLogo: 'https://i.ibb.co/wMyWtxT/logo.png',
   darkLogo: 'https://i.ibb.co/LgGLh56/logo-dark.png',
   favicon: `/static/favicon.ico`,
-  email: `info@iqubex.com`,
-  domain: 'https://adify.now.sh',
 }
 
 export const social = [
