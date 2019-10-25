@@ -2,7 +2,11 @@
   "version": 2,
   "name": "adify",
   "public": true,
-  "alias": ["adify", "adify.tech", "www.adify.tech"],
+  "alias": [
+    "adify",
+    "adify.tech",
+    "www.adify.tech"
+  ],
   "scope": "iqubex-technologies",
   "build": {
     "env": {
@@ -12,19 +16,25 @@
       "ADIFY_STEIN_API_PASSWORD": "@adifysteinapipassword"
     }
   },
-  "builds": [{
-    "src": "packages/web/package.json",
-    "use": "@now/next"
-  }, {
-    "src": "packages/backend/src/index.ts",
-    "use": "@now/node-server@canary"
-  }],
-  "routes": [{
-    "src": "/api/(.*)",
-    "dest": "packages/backend/src/$1"
-  }, {
-    "src": "(.*)",
-    "dest": "packages/web$1",
-    "continue": true
-  }]
+  "builds": [
+    {
+      "src": "packages/web/package.json",
+      "use": "@now/next"
+    },
+    {
+      "src": "packages/backend/src/index.ts",
+      "use": "@now/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/api/(.*)",
+      "dest": "packages/backend/src/index.js"
+    },
+    {
+      "src": "(.*)",
+      "dest": "packages/web$1",
+      "continue": true
+    }
+  ]
 }
