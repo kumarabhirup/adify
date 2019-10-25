@@ -5,13 +5,16 @@ import * as jwt from 'jsonwebtoken'
 import * as cors from 'cors'
 
 // temporary
-import express from 'express'
+import * as express from 'express'
 
 require('dotenv').config()
 
 const server = express()
+
 server.use(cookieParser())
+
 server.use(bodyParser.json({ limit: '50mb' }))
+
 server.use(
   bodyParser.urlencoded({
     limit: '50mb',
@@ -21,8 +24,8 @@ server.use(
 )
 
 // Routes
-server.get('/hi', (req, res) => {
-  res.send('<h1>Hooray!</h1>')
+server.get('/test', (req, res) => {
+  res.send('<h1>Hello World!</h1>')
 })
 
 server.listen(process.env.PORT || 3006)
