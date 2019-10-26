@@ -1,7 +1,7 @@
 # 🏄 adify.tech
 
 [![Type](https://img.shields.io/badge/type-monorepo-yellow.svg?style=flat-square)](https://github.com/iqubex-technologies/adify)
-[![emoji-log](https://cdn.jsdelivr.net/gh/ahmadawais/stuff@ca978741836412b5e33ce8561f5f95c933177067/emoji-log/flat.svg)](https://github.com/ahmadawais/Emoji-Log/)
+[![emoji-log](https://cdn.jsdelivr.net/gh/ahmadawais/stuff@ca978741836412b5e33ce8561f5f95c933177067/emoji-log/flat.svg)](https://github.com/KumarAbhirup/Emoji-Log/)
 [![Twitter](https://img.shields.io/twitter/follow/kumar_abhirup.svg?style=social&label=@kumar_abhirup)](https://twitter.com/kumar_abhirup/)
 
 ## 📦 Setup
@@ -13,9 +13,11 @@
 ```bash
 $ git clone https://github.com/iqubex-technologies/adify adify-monorepo # to clone project
 $ cd adify-monorepo # enter in the project
-$ npm i # install modules
-$ npm run dev # run development server
+$ yarn # install modules
+$ yarn dev # run development server
 ```
+
+- Rename `packages/web/.env.example` to `.env`.
 
 - Visit `http://localhost:3001/`
 
