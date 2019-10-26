@@ -25,7 +25,7 @@ server.use(
 
 // Routes
 server.get('/api/test', (req, res) => {
-  res.send('<h1>Hello World!</h1>')
+  res.send('<h1>Hello World!</h1>').sendStatus(200)
 })
 
 if (!process.env.NOW_REGION) {
