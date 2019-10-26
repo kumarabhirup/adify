@@ -22,14 +22,14 @@
       "use": "@now/next"
     },
     {
-      "src": "packages/backend/src/*.ts",
+      "src": "packages/backend/src/index.ts",
       "use": "@now/node"
     }
   ],
   "routes": [
     {
       "src": "/api/(.*)",
-      "dest": "/packages/backend/src/$1"
+      "dest": "packages/backend/src/index.ts"
     },
     {
       "src": "(.*)",

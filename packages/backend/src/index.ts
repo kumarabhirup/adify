@@ -24,8 +24,12 @@ server.use(
 )
 
 // Routes
-server.get('/test', (req, res) => {
+server.get('/api/test', (req, res) => {
   res.send('<h1>Hello World!</h1>')
 })
 
-server.listen(process.env.PORT || 3006)
+if (!process.env.NOW_REGION) {
+  server.listen(process.env.PORT || 3006)
+}
+
+module.exports = server
