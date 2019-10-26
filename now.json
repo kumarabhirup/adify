@@ -23,7 +23,7 @@
     },
     {
       "src": "packages/backend/src/index.ts",
-      "use": "@now/node"
+      "use": "@now/node-server"
     }
   ],
   "routes": [

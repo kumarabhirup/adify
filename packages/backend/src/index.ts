@@ -25,12 +25,8 @@ server.use(
 
 // Routes
 server.get('/api/test', (req, res) => {
-  // res.send({ data: { success: true } })
+  res.send({ data: { success: true } })
   res.sendStatus(200)
 })
 
-if (!process.env.NOW_REGION) {
-  server.listen(process.env.PORT || 3006)
-}
-
-module.exports = server
+server.listen(process.env.PORT || 3006)
