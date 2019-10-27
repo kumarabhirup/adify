@@ -6,8 +6,6 @@ import typeDefs from './utils/schema'
 import resolvers from './resolvers'
 import db from './utils/database'
 
-require('dotenv').config()
-
 const server: GraphQLServer = new GraphQLServer({
   typeDefs,
   resolvers,
