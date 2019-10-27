@@ -2,13 +2,14 @@ import { GraphQLServer } from 'graphql-yoga'
 import * as cookieParser from 'cookie-parser'
 import * as bodyParser from 'body-parser'
 
+import typeDefs from './utils/schema'
 import resolvers from './resolvers'
-import db from './database'
+import db from './utils/database'
 
 require('dotenv').config()
 
 const server: GraphQLServer = new GraphQLServer({
-  typeDefs: './src/schema.graphql',
+  typeDefs,
   resolvers,
   resolverValidationOptions: {
     requireResolversForResolveType: false,
