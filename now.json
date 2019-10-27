@@ -16,6 +16,12 @@
       "ADIFY_STEIN_API_PASSWORD": "@adifysteinapipassword"
     }
   },
+  "env": {
+    "MONGODB_USERNAME": "@adifymongodbusername",
+    "MONGODB_PASSWORD": "@adifymongodbpassword",
+    "MONGODB_DATABASE": "@adifymongodbdatabase",
+    "MONGODB_CLUSTER": "@adifymongodbcluster"
+  },
   "builds": [
     {
       "src": "packages/web/package.json",

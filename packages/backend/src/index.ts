@@ -1,15 +1,22 @@
 import { GraphQLServer } from 'graphql-yoga'
 import * as cookieParser from 'cookie-parser'
 import * as bodyParser from 'body-parser'
-import * as jwt from 'jsonwebtoken'
-import * as cors from 'cors'
 
-// temporary
-import * as express from 'express'
+import typeDefs from './utils/schema'
+import resolvers from './resolvers'
+import db from './utils/database'
 
-require('dotenv').config()
-
-const server = express()
+const server: GraphQLServer = new GraphQLServer({
+  typeDefs,
+  resolvers,
+  resolverValidationOptions: {
+    requireResolversForResolveType: false,
+  },
+  context: (request): object => ({
+    ...request,
+    db,
+  }),
+})
 
 server.use(cookieParser())
 
@@ -24,9 +31,9 @@ server.use(
 )
 
 // Routes
-server.get('/api/test', (req, res) => {
-  res.send({ data: { success: true } })
-  res.sendStatus(200)
-})
-
-server.listen(process.env.PORT || 3006)
+server.start(
+  {
+    endpoint: '/api/graphql',
+  },
+  details => console.log(`GraphQL Server is running on PORT ${details.port}`)
+)
