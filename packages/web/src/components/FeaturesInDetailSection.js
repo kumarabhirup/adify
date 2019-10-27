@@ -1,5 +1,4 @@
 import React from 'react'
-import Link from 'next/link'
 import { Element, Link as ScrollLink } from 'react-scroll'
 
 import { featuresInDetailSection } from '../api/meta'
