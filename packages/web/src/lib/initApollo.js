@@ -9,8 +9,10 @@ import fetch from 'isomorphic-unfetch'
 import resolvers from './apolloResolvers'
 
 const httpLink = new HttpLink({
-  uri: `${process.env.NODE_ENV !== 'production' &&
-    process.env.ADIFY_BACKEND_URL}/api/graphql`,
+  uri:
+    process.env.NODE_ENV !== 'production'
+      ? `${process.env.ADIFY_BACKEND_URL}/api/graphql`
+      : `/api/graphql`,
   // credentials: 'include', // Comment this out because it gave CORS error on localhost.
 })
 
