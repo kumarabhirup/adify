@@ -14,11 +14,11 @@ function create(apollo, initialState = {}) {
     combineReducers({
       // Setup reducers
       ...reducers,
-      apollo: apollo.reducer(),
+      // apollo: apollo.reducer(),
     }),
     initialState, // Hydrate the store with server-side data
     compose(
-      applyMiddleware(apollo.middleware()), // Add additional middleware here
+      // applyMiddleware(apollo.middleware()), // Add additional middleware here
       devtools
     )
   )

@@ -6,6 +6,8 @@ import { onError } from 'apollo-link-error'
 import { setContext } from 'apollo-link-context'
 import fetch from 'isomorphic-unfetch'
 
+import resolvers from './apolloResolvers'
+
 const httpLink = new HttpLink({
   uri: `${process.env.ENDPOINT}/api/graphql`,
   credentials: 'include',
@@ -55,6 +57,7 @@ function create(initialState, cookie = null) {
     ssrMode: !process.browser, // Disables forceFetch on the server (so queries are only run once)
     link: process.browser ? link : authLink.concat(httpLink),
     cache: cache.restore(initialState || {}),
+    resolvers,
   })
 }
 

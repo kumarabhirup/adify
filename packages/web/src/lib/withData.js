@@ -66,7 +66,7 @@ export default ComposedComponent =>
         serverState = {
           apollo: {
             // Only include the Apollo data state
-            data: state.apollo.data,
+            // data: state.apollo.data,
           },
         }
       }
