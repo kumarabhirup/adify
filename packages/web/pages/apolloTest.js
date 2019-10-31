@@ -9,7 +9,15 @@ const EXAMPLE_QUERY = gql`
 `
 
 export default function ApolloTestPage() {
-  const { data, loading } = useQuery(EXAMPLE_QUERY)
+  const { data, loading, error } = useQuery(EXAMPLE_QUERY)
 
-  return <h1>{!loading && data.exampleQuery}</h1>
+  return (
+    <>
+      <h1>
+        {loading && 'Loading...'}
+        {!loading && data.exampleQuery}
+        {error && 'Some error occured. Check out the console.'}
+      </h1>
+    </>
+  )
 }

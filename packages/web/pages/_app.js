@@ -1,6 +1,5 @@
 import React from 'react'
 import App, { Container } from 'next/app'
-import { ApolloProvider } from 'react-apollo'
 
 import Page from '../src/components/Page'
 import withData from '../src/lib/withData'
@@ -18,16 +17,14 @@ class Wrapper extends App {
   }
 
   render() {
-    const { Component, apolloClient, pageProps } = this.props
+    const { Component, pageProps } = this.props
 
     return (
       <Container>
-        <ApolloProvider client={apolloClient}>
-          <Page>
-            {/* eslint-disable-next-line react/jsx-props-no-spreading */}
-            <Component {...pageProps} />
-          </Page>
-        </ApolloProvider>
+        <Page>
+          {/* eslint-disable-next-line react/jsx-props-no-spreading */}
+          <Component {...pageProps} />
+        </Page>
       </Container>
     )
   }
