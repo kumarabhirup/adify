@@ -14,7 +14,7 @@
       "ADIFY_STEIN_API_KEY": "@adifysteinapikey",
       "ADIFY_STEIN_API_USERNAME": "@adifysteinapiusername",
       "ADIFY_STEIN_API_PASSWORD": "@adifysteinapipassword",
-      "ADIFY_BACKEND_URL": "https://localhost:4000"
+      "ADIFY_BACKEND_URL": "http://localhost:4000"
     }
   },
   "env": {
