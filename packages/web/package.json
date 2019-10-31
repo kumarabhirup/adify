@@ -4,9 +4,9 @@
   "main": "index.js",
   "license": "MIT",
   "scripts": {
-    "dev": "npm run gulp && next -p 3001",
-    "start": "npm run gulp && next start",
-    "build": "npm run gulp && next build",
+    "dev": "NODE_ENV=development npm run gulp && next -p 3001",
+    "start": "NODE_ENV=production npm run gulp && next start",
+    "build": "NODE_ENV=production npm run gulp && next build",
     "gulp": "gulp",
     "gulp:watch": "gulp watch",
     "lint": "eslint src/** pages/**",

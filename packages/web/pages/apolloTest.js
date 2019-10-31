@@ -15,7 +15,7 @@ export default function ApolloTestPage() {
     <>
       <h1>
         {loading && 'Loading...'}
-        {!loading && data.exampleQuery}
+        {data && data.exampleQuery}
         {error && 'Some error occured. Check out the console.'}
       </h1>
     </>
