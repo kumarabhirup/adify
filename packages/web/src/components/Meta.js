@@ -64,8 +64,8 @@ class Meta extends Component {
         <meta name="twitter:image" content={meta.coverImage} />
         <meta name="twitter:image:alt" content={meta.meta_ogTitle} />
         <meta name="twitter:card" content="summary_large_image" />
-        <meta name="twitter:site" content={meta.social} />
-        <meta name="twitter:creator" content={meta.social} />
+        <meta name="twitter:site" content={`@${meta.social}`} />
+        <meta name="twitter:creator" content={`@${meta.social}`} />
       </Head>
     )
   }

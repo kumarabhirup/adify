@@ -8,6 +8,7 @@ module.exports = withSass({
     ADIFY_STEIN_API_KEY: process.env.ADIFY_STEIN_API_KEY,
     ADIFY_STEIN_API_USERNAME: process.env.ADIFY_STEIN_API_USERNAME,
     ADIFY_STEIN_API_PASSWORD: process.env.ADIFY_STEIN_API_PASSWORD,
+    ADIFY_BACKEND_URL: process.env.ADIFY_BACKEND_URL,
   },
   cssModules: true,
 })

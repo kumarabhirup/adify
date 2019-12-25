@@ -2,6 +2,7 @@ import React from 'react'
 import App, { Container } from 'next/app'
 
 import Page from '../src/components/Page'
+import withData from '../src/lib/withData'
 
 class Wrapper extends App {
   static async getInitialProps({ Component, ctx }) {
@@ -29,4 +30,4 @@ class Wrapper extends App {
   }
 }
 
-export default Wrapper
+export default withData(Wrapper)
